@@ -18,4 +18,5 @@ Created with Flatiron School's online HTML & CSS class.
 
 14 OCT 2016
 * Add nav and footer.
+* Add contact form.
 * Changed photos wrapper from <ul> to <div>, removed <li> wrapper from photos.
