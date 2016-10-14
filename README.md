@@ -15,3 +15,7 @@ Created with Flatiron School's online HTML & CSS class.
 * Add placeholder text and images.
 * Add preliminary wrappers to HTML content.
 * Add preliminary class attributes to HTML elements.
+
+14 OCT 2016
+* Add nav and footer.
+* Changed photos wrapper from <ul> to <div>, removed <li> wrapper from photos.
