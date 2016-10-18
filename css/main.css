@@ -21,7 +21,7 @@ body {
   font-family: 'Archivo Narrow', Helvetica, sans-serif;
   font-size: 100%;
   color: hsla(19, 96%, 90%, 1);   /* color: #fedccc; */
-  background-color: hsla(19, 96%, 99%, 1);
+  background-color: hsla(19, 96%, 98%, 1);
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -34,8 +34,8 @@ body {
   background-color: hsla(17, 88%, 73%, 0.5);
 }
 
-.site-wrapper {
-  width: 1200px;
+.continent-wrapper {
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -49,8 +49,24 @@ h1, h2, h3 {
   z-index: 10;
 }
 
-h1, h2 {
+h1 {
+  font-size: 16em;
+  line-height: 0.8em;
+  -ms-transform: translate(-20px, 0); /* IE 9 */
+  -webkit-transform: translate(-20px, 0); /* Safari */
+  transform: translate(-20px, 0);
+}
+
+.closer-wrapper h1 {
+  text-align: right;
+  -ms-transform: translate(20px, 0); /* IE 9 */
+  -webkit-transform: translate(20px, 0); /* Safari */
+  transform: translate(20px, 0);
+}
+
+h2 {
   font-size: 8em;
+  text-align: right;
 }
 
 h3 {
@@ -70,10 +86,46 @@ photos
 .photos a img {
   height: 300px;
   width: 300px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  margin: 0 30px 30px 0;
 }
 
 .photos a img:hover {
   background: hsla(187, 68%, 70%, 0.5);
+}
+
+/*
+====================
+form
+====================
+*/
+.contact-wrapper {
+  color: hsla(187, 68%, 70%, 1);
+  background: hsla(187, 68%, 70%, 0.5);
+}
+
+.contact-form {
+  width: 960px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.info-name, .info-email, .info-instagram {
+  display: inline-block;
+  margin: 0 30px 30px 0;
+}
+
+.info-name input, .info-email input, .info-instagram input {
+  height: 45px;
+  width: 290px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.form-message, .form-button {
+  margin-top: 15px;
+}
+
+.form-button {
+  height: 45px;
+  width: 100%;
 }

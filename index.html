@@ -19,7 +19,7 @@
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
-      <a href="#contact-form">Contact</a>
+      <a href="#contact">Contact</a>
       <a href="#europe">Europe</a>
       <a href="#asia">Asia</a>
       <a href="#oceania">Oceania</a>
@@ -31,7 +31,7 @@
 
       <!-- intro wrapper -->
       <div class="intro-wrapper">
-        <h1>Global Street Art</h1>
+        <h1>Global<br>Street<br>Art</h1>
         <p>Street art seen around the world.</p>
       </div>
 
@@ -258,22 +258,43 @@
 
       <!-- closer wrapper -->
       <div class="closer-wrapper">
-        <h1>The End</h1>
+        <h1>The<br>End</h1>
         <p>Street art seen around the world.</p>
       </div>
 
       <!-- contact wrapper -->
       <div class="contact-wrapper">
-        <form class="contact-form" id="contact-form" action="index.html" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" value="" placeholder="Name" required>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" value="" placeholder="your@email.com" required>
-          <label for="instagram">Instagram</label>
-          <input type="text" name="instagram" id="instagram" value="" placeholder="@yourinstagram">
-          <textarea name="message" placeholder="What's up?!" rows="8" cols="40" required></textarea>
-          <input type="submit" value="Submit">
+
+        <form class="contact-form" id="contact" action="index.html" method="post">
+
+          <div class="form-info">
+            <div class="info-name">
+              <label for="name">Name</label>
+              <br>
+              <input type="text" name="name" id="name" value="" placeholder="Name" required>
+            </div>
+            <div class="info-email">
+              <label for="email">Email</label>
+              <br>
+            <input type="email" name="email" id="email" value="" placeholder="your@email.com" required>
+            </div>
+            <div class="info-instagram">
+              <label for="instagram">Instagram</label>
+              <br>
+              <input type="text" name="instagram" id="instagram" value="" placeholder="@yourinstagram">
+            </div>
+          </div>
+
+          <div class="form-message">
+            <label for="message">Message</label>
+            <br>
+            <textarea name="message" id="message" value="" placeholder="What's up?!" rows="8" cols="40" required></textarea>
+          </div>
+
+          <input class="form-button" type="submit" value="Submit">
+
         </form>
+
       </div>
 
       <!-- footer -->
