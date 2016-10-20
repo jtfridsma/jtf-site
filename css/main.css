@@ -13,7 +13,7 @@ google fonts
 
 /*
 ====================
-site
+global
 ====================
 */
 
@@ -22,14 +22,10 @@ body {
   font-size: 100%;
   color: hsla(19, 96%, 90%, 1);   /* color: #fedccc; */
   background-color: hsla(19, 96%, 98%, 1);
+  transition: all 0.2s ease;
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: hsla(17, 88%, 73%, 1);
-  background-color: hsla(17, 88%, 73%, 0.5);
-}
-
-::selection {
+::selection, ::-moz-selection { /* Code for Firefox */
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(17, 88%, 73%, 0.5);
 }
@@ -39,7 +35,7 @@ body {
   margin: 0 auto;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: hsla(17, 88%, 73%, 1);
 }
@@ -73,24 +69,48 @@ h3 {
   font-size: 6em;
 }
 
+.clearfix:after { /* for photo grid row */
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 /*
 ====================
-photos
+photo grid
 ====================
 */
-.photos {
+
+.photo-grid {
   width: 960px;
   margin: 0 auto;
 }
 
-.photos a img {
-  height: 300px;
-  width: 300px;
-  margin: 0 30px 30px 0;
+.photo-grid-row {
+  margin-bottom: 30px;
 }
 
-.photos a img:hover {
-  background: hsla(187, 68%, 70%, 0.5);
+.col-1 {
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin-right: 30px;
+  background: hsla(187, 68%, 70%, 0.5); /* background when image is not loaded */
+}
+
+.last {
+  margin-right: 0;
+}
+
+.col-1 a img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.empty { /* for test when image is not loaded */
+  display: none;
 }
 
 /*
@@ -98,6 +118,7 @@ photos
 form
 ====================
 */
+
 .contact-wrapper {
   color: hsla(187, 68%, 70%, 1);
   background: hsla(187, 68%, 70%, 0.5);
