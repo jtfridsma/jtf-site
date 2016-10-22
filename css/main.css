@@ -89,7 +89,6 @@ p {
 /* media */
 img {
   width: 100%;
-  display: block;
 }
 
 /* clearfix */
@@ -137,14 +136,37 @@ photo grid
   width: 290px;
   margin-right: 15px;
   background: hsla(187, 68%, 70%, 0.5); /* background when image is not loaded */
+  overflow: hidden;
 }
 
 .last {
   margin-right: 0;
 }
 
-.empty { /* for test when image is not loaded */
-  display: none;
+/*
+====================
+photo grid overlay
+====================
+*/
+
+.overlay {
+  display: none; /* hides overlay until image loads */
+  position: relative;
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
+.overlay .city {
+  border: 0;
+  bottom: 0px;
+  padding: 15px;
+  margin: 0;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+/* hover effect */
+.col-1 a:hover .overlay {
+  display: block;
+  top: -101%; /* positioning hack */
 }
 
 /*
