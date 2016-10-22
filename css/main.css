@@ -32,26 +32,24 @@ body {
   background-color: hsla(17, 88%, 73%, 0.5);
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { /* Firefox */
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(17, 88%, 73%, 0.5);
 }
 
-.continent-wrapper {
+.wrapper {
   width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
+/* links */
 a {
   text-decoration: none;
   color: hsla(17, 88%, 73%, 1);
 }
 
-nav a:hover {
-  border-bottom: 4px solid;
-}
-
+/* headers */
 h1, h2, h3 {
   font-family: 'Archivo Black';
   color: hsla(19, 96%, 90%, 1);   /* color: #fedccc; */
@@ -64,13 +62,6 @@ h1 {
   -ms-transform: translate(-20px, 0); /* IE 9 */
   -webkit-transform: translate(-20px, 0); /* Safari */
   transform: translate(-20px, 0);
-}
-
-.closer-wrapper h1 {
-  text-align: right;
-  -ms-transform: translate(20px, 0); /* IE 9 */
-  -webkit-transform: translate(20px, 0); /* Safari */
-  transform: translate(20px, 0);
 }
 
 h2 {
@@ -86,6 +77,7 @@ h2, h3 {
   margin: 120px 0 60px 0;
 }
 
+/* paragraphs */
 p {
   font-size: 1.25em;
   padding: 30px;
@@ -94,7 +86,14 @@ p {
   z-index: 20;
 }
 
-.clearfix:after { /* for photo grid row */
+/* media */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* clearfix */
+.clearfix:after {
   content: " ";
   display: block;
   clear: both;
@@ -102,11 +101,27 @@ p {
 
 /*
 ====================
+nav
+====================
+*/
+
+nav a:hover {
+  border-bottom: 4px solid;
+}
+
+/*
+====================
+headers
+====================
+*/
+
+/*
+====================
 photo grid
 ====================
 */
 
-.photo-grid {
+.photo-grid-wrapper {
   width: 900px;
   margin: 0 auto;
   z-index: 30;
@@ -128,24 +143,30 @@ photo grid
   margin-right: 0;
 }
 
-.col-1 a img {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .empty { /* for test when image is not loaded */
   display: none;
 }
 
 /*
 ====================
-form
+closer
 ====================
 */
 
-.contact-wrapper {
+.closer h1 {
+  text-align: right;
+  -ms-transform: translate(20px, 0); /* IE 9 */
+  -webkit-transform: translate(20px, 0); /* Safari */
+  transform: translate(20px, 0);
+}
+
+/*
+====================
+contact form
+====================
+*/
+
+.contact {
   color: hsla(187, 68%, 70%, 1);
   background: hsla(187, 68%, 70%, 0.5);
 }
@@ -176,3 +197,46 @@ form
   height: 45px;
   width: 100%;
 }
+
+/*
+====================
+responsive css
+====================
+
+
+@media only screen and (max-width: 1200px) {
+
+  .wrapper {
+    width: 900px;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+  .wrapper {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .photo-grid-wrapper {
+    width: 100%;
+  }
+
+  .photo-grid-row {
+    margin-bottom: 2%;
+  }
+
+  .col-1 {
+    height: 32%;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .last {
+    margin-right: 0;
+  }
+
+}
+
+*/
