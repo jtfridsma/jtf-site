@@ -34,3 +34,23 @@ Created with Flatiron School's online HTML & CSS class.
 * Refine HTML and CSS structure.
 * Add CSS-only image hover effect.
 * Add Netherlands and Belgium images.
+* Add contact form styles.
+
+---
+
+#### To Do
+
+* Define `nav` UX/UI and styles.
+* Define paragraph widths and variable positions.
+* Define `h1` positions.
+* Add remaining country images (Germany, onward).
+* Add "[icon] View On Instagram" to image overlay.
+* Research lazy loading.
+* Float `<span>*Required</span>` right in contact form.
+* Contact form validation styles.
+* Responsive CSS!
+* Explore alternate color schemes and graphics.
+
+#### Bugs
+
+* (none known at this point)
