@@ -23,7 +23,8 @@ body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
   font-size: 100%;
   color: hsla(17, 88%, 73%, 1);
-  background-color: hsla(19, 96%, 98%, 1);
+  /* background-color: hsla(19, 96%, 98%, 1); */
+  background-color: hsla(0, 0%, 100%, 1);
   transition: all 0.2s ease;
 }
 
@@ -37,15 +38,29 @@ body {
   background-color: hsla(17, 88%, 73%, 0.5);
 }
 
+/* wrappers */
 .wrapper {
-  width: 1200px;
-  padding: 0 30px;
+  max-width: 1200px;
+  padding: 0 2%;
   margin: 0 auto;
 }
 
 .inner-wrapper {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+.col-1 {
+  float: left;
+  height: 32%;
+  width: 32%;
+  margin-right: 2%;
+  background: hsla(187, 68%, 70%, 0.5); /* background when image is not loaded */
+  overflow: hidden;
+}
+
+.last {
+  margin-right: 0;
 }
 
 /* links */
@@ -64,9 +79,9 @@ h1, h2, h3 {
 h1 {
   font-size: 16em;
   line-height: 0.8em;
-  -ms-transform: translate(-20px, 0); /* IE 9 */
-  -webkit-transform: translate(-20px, 0); /* Safari */
-  transform: translate(-20px, 0);
+  -ms-transform: translate(-0.1em, 0); /* IE 9 */
+  -webkit-transform: translate(-0.1em, 0); /* Safari */
+  transform: translate(-0.1em, 0);
 }
 
 h2 {
@@ -79,14 +94,14 @@ h3 {
 }
 
 h2, h3 {
-  margin: 120px 0 60px 0;
+  margin: 16% 0 8% 0;
 }
 
 /* paragraphs */
 p {
   font-size: 1.25em;
-  padding: 30px 0 30px 30px;
-  margin: 60px 0;
+  padding: 4% 0 4% 4%;
+  margin: 8% 0;
   border-left: 4px solid;
   z-index: 20;
 }
@@ -127,55 +142,53 @@ headers
 
 /*
 ====================
-photo grid
+image grid
 ====================
 */
 
-.photo-grid {
+.image-grid {
   z-index: 30;
 }
 
-.photo-grid-row {
-  margin-bottom: 15px;
+.image-grid-row {
+  margin-bottom: 2%;
 }
 
-.col-1 {
-  float: left;
-  height: 290px;
-  width: 290px;
-  margin-right: 15px;
+.image {
+  position: relative;
+}
+
+.image a img {
+  width: 100%;
+  vertical-align: top;
   background: hsla(187, 68%, 70%, 0.5); /* background when image is not loaded */
-  overflow: hidden;
-}
-
-.last {
-  margin-right: 0;
 }
 
 /*
 ====================
-photo grid overlay
+image overlay
 ====================
 */
 
-.overlay {
-  opacity: 0;         /* hide while image loads */
-	visibility: hidden; /* hide while image loads */
-  position: relative;
-  top: -101%; /* positioning hack */
+.image-overlay {
+  opacity: 0;
+	visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background: hsla(0, 0%, 0%, 0.5);
+  z-index: 40;
 }
 
-.overlay .city {
+.image-overlay .city {
   border: 0;
-  bottom: 0px;
   padding: 15px;
   margin: 0;
   color: hsla(0, 0%, 100%, 1);
 }
 
 /* hover effect */
-.col-1 a:hover .overlay {
+.image a:hover .image-overlay {
   opacity: 1;
 	visibility: visible;
 }
@@ -188,9 +201,9 @@ closer
 
 .closer h1 {
   text-align: right;
-  -ms-transform: translate(20px, 0); /* IE 9 */
-  -webkit-transform: translate(20px, 0); /* Safari */
-  transform: translate(20px, 0);
+  -ms-transform: translate(0.1em, 0); /* IE 9 */
+  -webkit-transform: translate(0.1em, 0); /* Safari */
+  transform: translate(0.1em, 0);
 }
 
 /*
@@ -206,13 +219,8 @@ contact form
 
 /* form */
 .contact {
-  padding: 120px 0;
   color: hsla(187, 68%, 70%, 1);
   background: hsla(187, 68%, 70%, 0.5);
-}
-
-.form-info, .form-message {
-  padding-bottom: 30px;
 }
 
 form div .col-1 {
@@ -223,12 +231,18 @@ form div .col-1 {
 label {
   display: inline-block;
   font-size: 1.25em;
-  padding-bottom: 15px;
+  width: 100%;
+  padding: 2% 0;
 }
 
 label span {
+  float: right;
   font-size: 0.5em;
   color: hsla(187, 68%, 70%, 0.75);
+}
+
+label span:before {
+  content: " ";
 }
 
 /* input fields */
@@ -301,41 +315,34 @@ input:invalid {
 ====================
 responsive css
 ====================
-
+*/
 
 @media only screen and (max-width: 1200px) {
 
-  .wrapper {
-    width: 900px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .form-info .col-1 {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .form-info {
+    padding-bottom: 0;
+  }
+
+  .form-message {
+    padding-bottom: 2%;
   }
 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 600px) {
 
-  .wrapper {
-    width: 100%;
-    padding: 0 2%;
-  }
+  h1, h2, h3, p {
 
-  .photo-grid-wrapper {
-    width: 100%;
-  }
-
-  .photo-grid-row {
-    margin-bottom: 2%;
-  }
-
-  .col-1 {
-    height: 32%;
-    width: 32%;
-    margin-right: 2%;
-  }
-
-  .last {
-    margin-right: 0;
   }
 
 }
-
-*/

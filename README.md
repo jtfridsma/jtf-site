@@ -36,21 +36,24 @@ Created with Flatiron School's online HTML & CSS class.
 * Add Netherlands and Belgium images.
 * Add contact form styles.
 
+25 OCT 2016
+* Better CSS-only image hover effect.
+* Initial responsive CSS: Changed size, margin, padding from fixed values to percentages for all elements.
+
 ---
 
 #### To Do
 
 * Define `nav` UX/UI and styles.
-* Define paragraph widths and variable positions.
-* Define `h1` positions.
+* Define paragraph widths, possible variable positions.
 * Add remaining country images (Germany, onward).
 * Add "[icon] View On Instagram" to image overlay.
 * Research lazy loading.
-* Float `<span>*Required</span>` right in contact form.
-* Contact form validation styles.
-* Responsive CSS!
+* Contact form validation and focus styles.
+* Complete responsive CSS.
 * Explore alternate color schemes and graphics.
 
 #### Bugs
 
-* (none known at this point)
+* Fix `<span>*Required</span>` vertical alignment in contact form.
+* Fix contact form margin and padding issues in desktop size.
