@@ -49,6 +49,7 @@ body {
 /* columns */
 .column-1-3 {
   float: left;
+  width: 32%;
   margin-right: 2%;
   background: hsla(187, 68%, 70%, 0.5); /* background when image is not loaded */
   overflow: hidden;
@@ -120,7 +121,22 @@ navigation
 ====================
 */
 
-.navigation a:hover {
+.navigation {
+  background: hsla(17, 88%, 73%, 0.5);
+}
+.navigation-list {
+  padding: 6% 0;
+}
+.navigation-list a {
+  display: block;
+  text-align: center;
+  padding-top: 2%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.navigation-list a:hover {
   border-bottom: 4px solid;
 }
 
@@ -143,8 +159,6 @@ image grid
   margin-bottom: 2%;
 }
 .image {
-  width: 32%;
-  height: 32%;
   position: relative;
 }
 .image a img {
