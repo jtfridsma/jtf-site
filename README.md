@@ -39,6 +39,8 @@ Created with Flatiron School's online HTML & CSS class.
 25 OCT 2016
 * Better CSS-only image hover effect.
 * Initial responsive CSS: Changed size, margin, padding from fixed values to percentages for all elements.
+* Add `lazysizes.min.js` as lazy load solution.
+* Add retina image capability to Iceland (320px native to full-res native with `../media?size=l`).
 
 ---
 
@@ -46,14 +48,15 @@ Created with Flatiron School's online HTML & CSS class.
 
 * Define `nav` UX/UI and styles.
 * Define paragraph widths, possible variable positions.
-* Add remaining country images (Germany, onward).
+* Add remaining country images (Germany, onward) with retina capability.
 * Add "[icon] View On Instagram" to image overlay.
-* Research lazy loading.
 * Contact form validation and focus styles.
 * Complete responsive CSS.
 * Explore alternate color schemes and graphics.
+* Add `<noscript>...</noscript>` fallback images.
 
 #### Bugs
 
 * Fix `<span>*Required</span>` vertical alignment in contact form.
-* Fix contact form margin and padding issues in desktop size.
+* Contact form margin and padding issues in desktop size.
+* Contact form input rounded border in mobile.
