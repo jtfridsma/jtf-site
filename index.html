@@ -17,19 +17,25 @@
   <body>
 
     <!-- .navigation -->
-    <nav class="navigation" role="navigation">
-      <div class="navigation-list wrapper">
-        <a href="#">Home</a>
+
+    <nav class="navigation" id="navigation" role="navigation">
+      <div class="navigation-list">
+        <a href="#" onclick="closeNav()">CLOSE</a>
         <br><br>
         <a href="#europe">Europe</a>
         <a href="#asia">Asia</a>
         <a href="#oceania">Oceania</a>
         <a href="#north-america">North America</a>
         <br><br>
+        <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
+
+    <div class="navigation-open">
+      <a href="#" onclick="openNav()">&#9776;</a>
+    </div>
 
     <!-- header -->
     <header>
@@ -801,6 +807,11 @@
 
     <!-- lazysizes js -->
     <script src="js/lazysizes.min.js"></script>
+    <!-- simple menu overlay js  -->
+    <script>
+      function openNav() { document.getElementById("navigation").style.visibility = "visible"; }
+      function closeNav() { document.getElementById("navigation").style.visibility = "hidden"; }
+    </script>
 
   </body>
 </html>

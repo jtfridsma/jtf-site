@@ -122,7 +122,15 @@ navigation
 */
 
 .navigation {
-  background: hsla(17, 88%, 73%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsla(0, 0%, 100%, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 50;
+  visibility: hidden;
 }
 .navigation-list {
   padding: 6% 0;
@@ -131,13 +139,18 @@ navigation
   display: block;
   text-align: center;
   padding-top: 2%;
+  /*
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  */
 }
 .navigation-list a:hover {
   border-bottom: 4px solid;
+}
+.navigation-open {
+  position: fixed;
 }
 
 /*
