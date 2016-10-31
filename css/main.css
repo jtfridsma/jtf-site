@@ -6,7 +6,7 @@ google fonts
 
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400');
 /*
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
@@ -22,6 +22,7 @@ global
 body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
   font-size: 100%;
+  font-weight: 300;
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
@@ -78,22 +79,25 @@ h1 {
   transform: translate(-0.1em, 0);
 }
 h2 {
-  font-size: 8em;
-  text-align: right;
+  font-size: 6em;
+  /* text-align: right; */
 }
 h3 {
-  font-size: 6em;
+  font-size: 4em;
+  text-align: right;
 }
 h2, h3 {
-  margin: 16% 0 8% 0;
+  margin: 8% 0 4% 0;
+  border-bottom: 4px solid;
 }
 
 /* paragraphs */
 p {
-  font-size: 1.25em;
-  padding: 4% 0 4% 4%;
-  margin: 8% 0;
-  border-left: 4px solid;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  width: 66%;
+  margin: 4em 0;
+  /* border-left: 4px solid;  */
   z-index: 20;
 }
 
