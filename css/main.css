@@ -27,23 +27,20 @@ body {
   background-color: hsla(0, 0%, 100%, 1);
 }
 
+/* text selection */
 ::selection {
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(17, 88%, 73%, 0.5);
 }
-::-moz-selection { /* Firefox */
+::-moz-selection {
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(17, 88%, 73%, 0.5);
 }
 
-/* wrappers */
+/* wrapper */
 .wrapper {
-  max-width: 1200px;
-  padding: 0 2%;
-  margin: 0 auto;
-}
-.inner-wrapper {
   max-width: 900px;
+  padding: 0 2%;
   margin: 0 auto;
 }
 
@@ -69,43 +66,38 @@ body {
 /* links */
 a {
   text-decoration: none;
-  color: hsla(17, 88%, 73%, 1);
 }
 
 /* headers */
 h1, h2, h3 {
   font-family: 'Archivo Black';
   color: hsla(19, 96%, 90%, 1);
-  z-index: 10;
+  margin: 0;
 }
 h1 {
-  font-size: 16em;
+  font-size: 12em;
   line-height: 0.8em;
+  /*
   -ms-transform: translate(-0.1em, 0);
   -webkit-transform: translate(-0.1em, 0);
   transform: translate(-0.1em, 0);
+  */
 }
 h2 {
   font-size: 6em;
-  /* text-align: right; */
 }
 h3 {
   font-size: 4em;
   text-align: right;
 }
 h2, h3 {
-  margin: 8% 0 4% 0;
   border-bottom: 4px solid;
 }
 
 /* paragraphs */
 p {
-  font-size: 1.125em;
+  /* font-size: 1.125em;  */
   line-height: 1.5em;
-  width: 66%;
-  margin: 4em 0;
-  /* border-left: 4px solid;  */
-  z-index: 20;
 }
 
 /* media */
@@ -114,14 +106,14 @@ img {
   max-width: 100%;
 }
 
-/* overflow */
-header, .closer {
+/* overflow ---WEIRD BUG WHEN HIDDEN--- */
+header {
   overflow: hidden;
 }
 
 /* clearfix */
 .clearfix:after {
-  content: " ";
+  content: "";
   display: block;
   clear: both;
 }
@@ -140,7 +132,7 @@ navigation
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 50;
+  z-index: 100;
   visibility: hidden;
 }
 .navigation-list {
@@ -177,7 +169,6 @@ image grid
 */
 
 .image-grid {
-  z-index: 30;
 }
 .image-grid-row {
   margin-bottom: 2%;
@@ -202,7 +193,7 @@ image overlay
   width: 100%;
   height: 100%;
   background: hsla(0, 0%, 0%, 0.5);
-  z-index: 40;
+  z-index: 50;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -219,19 +210,6 @@ image overlay
 .image a:hover .image-overlay {
   opacity: 1;
 	visibility: visible;
-}
-
-/*
-====================
-closer
-====================
-*/
-
-.closer h1 {
-  text-align: right;
-  -ms-transform: translate(0.1em, 0); /* IE 9 */
-  -webkit-transform: translate(0.1em, 0); /* Safari */
-  transform: translate(0.1em, 0);
 }
 
 /*

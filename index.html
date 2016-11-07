@@ -17,7 +17,6 @@
   <body>
 
     <!-- .navigation -->
-
     <nav class="navigation" id="navigation" role="navigation">
       <div class="navigation-list">
         <a href="javascript:void(0)" onclick="closeNavigation()">CLOSE</a>
@@ -38,27 +37,42 @@
     </div>
 
     <!-- header -->
-    <header>
+    <header class="wrapper">
       <h1>Global <br>Street <br>Art</h1>
-      <div class="wrapper">
-        <p>Street art seen around the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div>
+        <p>In 2015, I decided to turn the loss of a job into an adventure. I called a friend to see if he was interested in joining, and 4 months later we were on the road. This page collects (most of) the street art I saw all around the world. </p>
       </div>
     </header>
 
     <!-- .wrapper -->
-    <main class="inner-wrapper">
+    <main class="wrapper">
 
-      <!-- .EUROPE -->
-      <div class="continent europe" id="europe">
-        <h2>Europe</h2>
-        <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- #EUROPE -->
+      <div class="continent" id="europe">
+        <h2 class="continent-header">Europe</h2>
+        <div class="continent-details clearfix">
+          <div class="column-1-3">
+            <p>Jump to...</p>
+            <a href="#iceland">Iceland</a>
+            <a href="#netherlands">Netherlands</a>
+            <a href="#belgium">Belgium</a>
+            <a href="#germany">Germany</a>
+            <a href="#denmark">Denmark</a>
+            <a href="#sweden">Sweden</a>
+            <a href="#finland">Finland</a>
+            <a href="#norway">Norway</a>
+          </div>
+          <div class="column-2-3 last">
+            <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
 
         <!-- Iceland -->
-        <div class="country">
+        <div class="country" id="iceland">
           <h3>Iceland</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -137,15 +151,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Netherlands -->
-        <div class="country">
+        <div class="country"  id="netherlands">
           <h3>Netherlands</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -239,15 +253,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Belgium -->
-        <div class="country">
+        <div class="country" id="belgium">
           <h3>Belgium</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -269,15 +283,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Germany -->
-        <div class="country">
+        <div class="country" id="germany">
           <h3>Germany</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -299,15 +313,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Denmark -->
-        <div class="country">
+        <div class="country" id="denmark">
           <h3>Denmark</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -329,15 +343,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Sweden -->
-        <div class="country">
+        <div class="country" id="sweden">
           <h3>Sweden</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -359,15 +373,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Finland -->
-        <div class="country">
+        <div class="country" id="finland">
           <h3>Finland</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -389,15 +403,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Norway -->
-        <div class="country">
+        <div class="country" id="norway">
           <h3>Norway</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -419,22 +433,36 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
-      </div><!-- /.EUROPE -->
+      </div><!-- /#EUROPE -->
 
-      <!-- .ASIA -->
-      <div class="continent asia" id="asia">
-        <h2>Asia</h2>
-        <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- #ASIA -->
+      <div class="continent" id="asia">
+        <h2 class="continent-header">Asia</h2>
+        <div class="continent-details clearfix">
+          <div class="column-1-3">
+            <a href="#iceland">Iceland</a>
+            <a href="#netherlands">Netherlands</a>
+            <a href="#belgium">Belgium</a>
+            <a href="#germany">Germany</a>
+            <a href="#denmark">Denmark</a>
+            <a href="#sweden">Sweden</a>
+            <a href="#finland">Finland</a>
+            <a href="#norway">Norway</a>
+          </div>
+          <div class="column-2-3 last">
+            <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
 
         <!-- Thailand -->
-        <div class="country">
+        <div class="country" id="thailand">
           <h3>Thailand</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -456,15 +484,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Cambodia -->
-        <div class="country">
+        <div class="country" id="cambodia">
           <h3>Cambodia</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -486,15 +514,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Vietnam -->
-        <div class="country">
+        <div class="country" id="vietnam">
           <h3>Vietnam</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -516,15 +544,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Singapore -->
-        <div class="country">
+        <div class="country" id="singapore">
           <h3>Singapore</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -546,15 +574,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Indonesia -->
-        <div class="country">
+        <div class="country" id="indonesia">
           <h3>Indonesia</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -576,22 +604,22 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
-      </div><!-- /.ASIA -->
+      </div><!-- /#ASIA -->
 
-      <!-- .OCEANIA -->
-      <div class="continent oceania" id="oceania">
+      <!-- #OCEANIA -->
+      <div class="continent" id="oceania">
         <h2>Oceania</h2>
         <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <!-- Australia -->
-        <div class="country">
+        <div class="country" id="australia">
           <h3>Australia</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -613,15 +641,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- USA:Hawaii -->
-        <div class="country">
+        <div class="country" id="hawaii">
           <h3>USA:Hawaii</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -643,22 +671,36 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
-      </div><!-- /.OCEANIA -->
+      </div><!-- /#OCEANIA -->
 
-      <!-- .NORTH-AMERICA -->
-      <div class="continent north-america" id="north-america">
-        <h2>North America</h2>
-        <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- #NORTH-AMERICA -->
+      <div class="continent" id="north-america">
+        <h2 class="continent-header">North America</h2>
+        <div class="continent-details clearfix">
+          <div class="column-1-3">
+            <a href="#iceland">Iceland</a>
+            <a href="#netherlands">Netherlands</a>
+            <a href="#belgium">Belgium</a>
+            <a href="#germany">Germany</a>
+            <a href="#denmark">Denmark</a>
+            <a href="#sweden">Sweden</a>
+            <a href="#finland">Finland</a>
+            <a href="#norway">Norway</a>
+          </div>
+          <div class="column-2-3 last">
+            <p>Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
 
         <!-- Canada -->
-        <div class="country">
+        <div class="country" id="canada">
           <h3>Canada</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -680,15 +722,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- USA -->
-        <div class="country">
+        <div class="country" id="usa">
           <h3>USA</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -710,15 +752,15 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
         <!-- Puerto Rico -->
-        <div class="country">
+        <div class="country" id="puerto-rico">
           <h3>Puerto Rico</h3>
           <p>Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <div class="image-grid inner-wrapper">
+          <div class="image-grid">
 
             <div class="image-grid-row clearfix">
               <div class="image column-1-3">
@@ -740,26 +782,17 @@
                 </a>
               </div>
             </div><!-- /.image-grid-row -->
-          </div><!-- /.image-grid .inner-wrapper -->
+          </div><!-- /.image-grid -->
         </div><!-- /.country -->
 
-      </div><!-- /.NORTH-AMERICA -->
+      </div><!-- /#NORTH-AMERICA -->
 
     </main><!-- .wrapper -->
 
-    <!-- .closer -->
-    <div class="closer">
-      <h1>The<br> End</h1>
-      <div class="wrapper">
-        <p>Street art seen around the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-
     <!-- .contact -->
     <div class="contact" id="contact">
-      <h1>Get <br>In <br>Touch </h1>
 
-      <form class="form wrapper inner-wrapper" action="index.html" method="post">
+      <form class="form wrapper" action="index.html" method="post">
 
         <div class="form-info clearfix">
           <div class="column-1-3">
@@ -787,7 +820,7 @@
 
         <input class="form-button" type="submit" value="Submit">
 
-      </form><!-- /.form .inner-wrapper -->
+      </form><!-- /.form -->
 
     </div><!-- /.contact -->
 
