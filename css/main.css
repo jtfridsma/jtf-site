@@ -55,6 +55,13 @@ body {
   margin-right: 2%;
   overflow: hidden;
 }
+.column-2-3 {
+  position: relative;
+  float: left;
+  width: 66%;
+  margin-right: 2%;
+  overflow: hidden;
+}
 .last {
   margin-right: 0;
 }

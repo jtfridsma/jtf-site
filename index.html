@@ -20,21 +20,21 @@
 
     <nav class="navigation" id="navigation" role="navigation">
       <div class="navigation-list">
-        <a href="javascript:void(0)" onclick="closeNav()">CLOSE</a>
+        <a href="javascript:void(0)" onclick="closeNavigation()">CLOSE</a>
         <br><br>
-        <a href="#europe" onclick="closeNav()">Europe</a>
-        <a href="#asia" onclick="closeNav()">Asia</a>
-        <a href="#oceania" onclick="closeNav()">Oceania</a>
-        <a href="#north-america" onclick="closeNav()">North America</a>
+        <a href="#europe" onclick="closeNavigation()">Europe</a>
+        <a href="#asia" onclick="closeNavigation()">Asia</a>
+        <a href="#oceania" onclick="closeNavigation()">Oceania</a>
+        <a href="#north-america" onclick="closeNavigation()">North America</a>
         <br><br>
-        <a href="#" onclick="closeNav()">Home</a>
-        <a href="#" onclick="closeNav()">About</a>
-        <a href="#contact" onclick="closeNav()">Contact</a>
+        <a href="#" onclick="closeNavigation()">Home</a>
+        <a href="#" onclick="closeNavigation()">About</a>
+        <a href="#contact" onclick="closeNavigation()">Contact</a>
       </div>
     </nav>
 
     <div class="navigation-open">
-      <a href="javascript:void(0)" onclick="openNav()">&#9776;</a>
+      <a href="javascript:void(0)" onclick="openNavigation()">&#9776;</a>
     </div>
 
     <!-- header -->
@@ -809,8 +809,8 @@
     <script src="js/lazysizes.min.js"></script>
     <!-- simple menu overlay js  -->
     <script>
-      function openNav() { document.getElementById("navigation").style.visibility = "visible"; }
-      function closeNav() { document.getElementById("navigation").style.visibility = "hidden"; }
+      function openNavigation() { document.getElementById("navigation").style.visibility = "visible"; }
+      function closeNavigation() { document.getElementById("navigation").style.visibility = "hidden"; }
     </script>
 
   </body>
