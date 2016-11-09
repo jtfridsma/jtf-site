@@ -82,7 +82,7 @@ a:hover {
 /* headers */
 h1, h2, h3 {
   font-family: 'Archivo Black';
-  color: hsla(19, 96%, 90%, 1);
+  /* color: hsla(19, 96%, 90%, 1); */
   color: hsla(187, 68%, 85%, 1);
   margin: 0;
 }
@@ -132,7 +132,7 @@ navigation
 ====================
 */
 
-.navigation {
+.main-navigation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,10 +143,10 @@ navigation
   z-index: 100;
   visibility: hidden;
 }
-.navigation-list {
+.main-navigation-list {
   padding: 6% 0;
 }
-.navigation-list a {
+.main-navigation-list a {
   display: block;
   text-align: center;
   padding-top: 2%;
@@ -157,10 +157,10 @@ navigation
   transition: all 0.1s ease-in-out;
   */
 }
-.navigation-list a:hover {
+.main-navigation-list a:hover {
   border-bottom: 4px solid;
 }
-.navigation-open {
+.main-navigation-open {
   position: fixed;
 }
 
@@ -184,7 +184,7 @@ intro
 }
 .intro-content-scroll {
   position: fixed;
-  bottom: 2em;
+  bottom: 2rem;
 }
 .intro-content-text {
   margin: 8rem 0 20rem 0;
@@ -206,6 +206,25 @@ intro
 }
 .intro-header:hover .alternate-opacity-2 {
   opacity: 1;
+}
+
+/*
+====================
+main
+====================
+*/
+
+/*
+====================
+continent, etc.
+====================
+*/
+
+.continent, .country {
+  margin: 8rem 0;
+}
+.header {
+  margin-bottom: 2rem;
 }
 
 /*
