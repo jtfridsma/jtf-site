@@ -59,6 +59,9 @@ body {
   margin-right: 2%;
   overflow: hidden;
 }
+.column-right {
+  float: right;
+}
 .last {
   margin-right: 0;
 }
@@ -66,17 +69,27 @@ body {
 /* links */
 a {
   text-decoration: none;
+  border-bottom: 4px solid;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+a:hover {
+  padding-bottom: 0.1em;
 }
 
 /* headers */
 h1, h2, h3 {
   font-family: 'Archivo Black';
   color: hsla(19, 96%, 90%, 1);
+  color: hsla(187, 68%, 85%, 1);
   margin: 0;
 }
 h1 {
   font-size: 12em;
   line-height: 0.8em;
+  text-transform: uppercase;
   /*
   -ms-transform: translate(-0.1em, 0);
   -webkit-transform: translate(-0.1em, 0);
@@ -91,7 +104,7 @@ h3 {
   text-align: right;
 }
 h2, h3 {
-  border-bottom: 4px solid;
+  border-bottom: 4px solid hsla(187, 68%, 70%, 1);
 }
 
 /* paragraphs */
@@ -104,11 +117,6 @@ p {
 img {
   width: 100%;
   max-width: 100%;
-}
-
-/* overflow ---WEIRD BUG WHEN HIDDEN--- */
-header {
-  overflow: hidden;
 }
 
 /* clearfix */
@@ -154,6 +162,50 @@ navigation
 }
 .navigation-open {
   position: fixed;
+}
+
+/*
+====================
+intro
+====================
+*/
+
+.intro {
+  min-height: 100vh;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1)), url("../images/intro-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.intro-content-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.intro-content-scroll {
+  position: fixed;
+  bottom: 2em;
+}
+.intro-content-text {
+  margin: 8rem 0 20rem 0;
+}
+.alternate-opacity-1, .alternate-opacity-2 {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.alternate-opacity-1 {
+  opacity: 1;
+}
+.alternate-opacity-2 {
+  opacity: 0.5;
+}
+.intro-header:hover .alternate-opacity-1 {
+  opacity: 0.5;
+}
+.intro-header:hover .alternate-opacity-2 {
+  opacity: 1;
 }
 
 /*
