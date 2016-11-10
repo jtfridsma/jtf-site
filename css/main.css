@@ -93,7 +93,6 @@ text styles
 }
 .intro-text {
   font-size: 1.125rem;
-  background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 /* headers */
@@ -124,11 +123,14 @@ text styles
 /* links */
 .link {
   border-bottom: 4px solid;
+  color: hsla(17, 88%, 73%, 1);
+  font-weight: 400;
 }
 .link:hover {
   padding-bottom: 0.1em;
 }
 .link:active {
+  color: hsla(17, 88%, 73%, 1);
 }
 
 /*
@@ -172,8 +174,8 @@ main navigation
   text-align: center;
   padding-top: 2%;
 }
-.main-navigation-list a:hover {
-  border-bottom: 4px solid;
+.main-navigation-open {
+  z-index: 90;
 }
 .main-navigation-open,
 .main-navigation-close {
@@ -181,7 +183,9 @@ main navigation
   top: 2rem;
   right: 2rem;
   font-size: 2rem;
-  z-index: 110;
+}
+.toggle-link {
+  border-bottom: 0;
 }
 
 /*
@@ -192,7 +196,11 @@ intro
 
 .intro {
   min-height: 100vh;
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1)), url("../images/intro-bg.jpg");
+  background: hsla(49, 14%, 32%, 1);
+  background: -moz-linear-gradient(to right, hsla(76, 21%, 28%, 1) 0%, hsla(15, 12%, 39%, 1) 25%, hsla(24, 8%, 61%, 1) 50%, hsla(49, 14%, 32%, 1) 75%, hsla(76, 21%, 28%, 1) 100%);
+  background: -webkit-linear-gradient(to right, hsla(76, 21%, 28%, 1) 0%, hsla(15, 12%, 39%, 1) 25%, hsla(24, 8%, 61%, 1) 50%, hsla(49, 14%, 32%, 1) 75%, hsla(76, 21%, 28%, 1) 100%);
+  background: linear-gradient(to right, hsla(76, 21%, 28%, 1) 0%, hsla(15, 12%, 39%, 1) 25%, hsla(24, 8%, 61%, 1) 50%, hsla(49, 14%, 32%, 1) 75%, hsla(76, 21%, 28%, 1) 100%);
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1)), url("../images/intro-background.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -206,8 +214,9 @@ intro
   align-items: center;
 }
 .intro-content-scroll {
-  position: fixed;
-  bottom: 2rem;
+}
+.scroll-icon {
+  color: hsla(187, 68%, 85%, 0.5);
 }
 .intro-content-text {
   margin: 8rem 0 20rem 0;
@@ -231,6 +240,23 @@ intro
 .alternate-opacity:hover .alternate-opacity-2 {
   opacity: 1;
   padding-left: 0rem;
+}
+
+/* bounce effect */
+.bounce {
+  position: fixed;
+  bottom: 2rem;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-webkit-keyframes bounce {
+    0%, 66%, 100% {-webkit-transform: translateY(0);}
+    33% {-webkit-transform: translateY(-0.5rem);}
+}
+@keyframes bounce {
+  0%, 66%, 100% {-webkit-transform: translateY(0);}
+  33% {-webkit-transform: translateY(-0.5rem);}
 }
 
 /*
@@ -274,7 +300,7 @@ image grid
   margin-bottom: 2%;
 }
 .image {
-  background: hsla(187, 68%, 70%, 0.5); /* background when image is not loaded */
+  background: hsla(187, 68%, 70%, 0.5);
 }
 .image a img {
   vertical-align: top;
