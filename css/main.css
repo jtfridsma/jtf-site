@@ -7,11 +7,6 @@ google fonts
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400');
-/*
-<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-*/
 
 /*
 ====================
@@ -26,8 +21,15 @@ body {
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
 
-/* text selection */
+/* selection */
 ::selection {
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(17, 88%, 73%, 0.5);
@@ -36,6 +38,12 @@ body {
   color: hsla(17, 88%, 73%, 1);
   background-color: hsla(17, 88%, 73%, 0.5);
 }
+
+/*
+====================
+layout
+====================
+*/
 
 /* wrapper */
 .wrapper {
@@ -66,59 +74,6 @@ body {
   margin-right: 0;
 }
 
-/* links */
-a {
-  text-decoration: none;
-  border-bottom: 4px solid;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-a:hover {
-  padding-bottom: 0.1em;
-}
-
-/* headers */
-h1, h2, h3 {
-  font-family: 'Archivo Black';
-  /* color: hsla(19, 96%, 90%, 1); */
-  color: hsla(187, 68%, 85%, 1);
-  margin: 0;
-}
-h1 {
-  font-size: 12em;
-  line-height: 0.8em;
-  text-transform: uppercase;
-  /*
-  -ms-transform: translate(-0.1em, 0);
-  -webkit-transform: translate(-0.1em, 0);
-  transform: translate(-0.1em, 0);
-  */
-}
-h2 {
-  font-size: 6em;
-}
-h3 {
-  font-size: 4em;
-  text-align: right;
-}
-h2, h3 {
-  border-bottom: 4px solid hsla(187, 68%, 70%, 1);
-}
-
-/* paragraphs */
-p {
-  /* font-size: 1.125em;  */
-  line-height: 1.5em;
-}
-
-/* media */
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
 /* clearfix */
 .clearfix:after {
   content: "";
@@ -128,7 +83,73 @@ img {
 
 /*
 ====================
-navigation
+text styles
+====================
+*/
+
+/* text */
+.text {
+  line-height: 1.5rem;
+}
+.intro-text {
+  font-size: 1.125rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+/* headers */
+.header {
+  font-family: 'Archivo Black';
+  color: hsla(187, 68%, 85%, 1);
+  margin: 0;
+}
+.intro-header {
+  font-size: 12rem;
+  line-height: 9.5rem;
+  text-transform: uppercase;
+}
+.continent-header {
+  font-size: 6rem;
+}
+.country-header {
+  font-size: 4rem;
+  text-align: right;
+}
+
+/* underline */
+.continent-header,
+.country-header {
+  border-bottom: 4px solid hsla(187, 68%, 70%, 1);
+}
+
+/* links */
+.link {
+  border-bottom: 4px solid;
+}
+.link:hover {
+  padding-bottom: 0.1em;
+}
+.link:active {
+}
+
+/*
+====================
+transitions
+====================
+*/
+
+.link,
+.alternate-opacity-1,
+.alternate-opacity-2,
+.image-overlay {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+/*
+====================
+main navigation
 ====================
 */
 
@@ -136,32 +157,30 @@ navigation
   display: flex;
   align-items: center;
   justify-content: center;
-  background: hsla(0, 0%, 100%, 0.9);
+  background: hsla(0, 0%, 100%, 1);
   width: 100%;
   height: 100%;
   position: fixed;
+  overflow: hidden;
   z-index: 100;
   visibility: hidden;
 }
 .main-navigation-list {
-  padding: 6% 0;
 }
-.main-navigation-list a {
+.main-link {
   display: block;
   text-align: center;
   padding-top: 2%;
-  /*
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  */
 }
 .main-navigation-list a:hover {
   border-bottom: 4px solid;
 }
-.main-navigation-open {
+.main-navigation-open,
+.main-navigation-close {
   position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
 }
 
 /*
@@ -177,6 +196,8 @@ intro
   background-position: bottom;
   background-attachment: fixed;
 }
+.intro-content {
+}
 .intro-content-header {
   height: 100vh;
   display: flex;
@@ -189,23 +210,25 @@ intro
 .intro-content-text {
   margin: 8rem 0 20rem 0;
 }
-.alternate-opacity-1, .alternate-opacity-2 {
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+.alternate-opacity {
+  display: inline-block;
 }
+
+/* hover effect */
 .alternate-opacity-1 {
   opacity: 1;
 }
 .alternate-opacity-2 {
   opacity: 0.5;
+  padding-left: 2rem;
 }
-.intro-header:hover .alternate-opacity-1 {
+.alternate-opacity:hover .alternate-opacity-1 {
   opacity: 0.5;
+  padding-right: 2rem;
 }
-.intro-header:hover .alternate-opacity-2 {
+.alternate-opacity:hover .alternate-opacity-2 {
   opacity: 1;
+  padding-left: 0rem;
 }
 
 /*
@@ -214,24 +237,20 @@ main
 ====================
 */
 
-/*
-====================
-continent, etc.
-====================
-*/
-
-.continent, .country {
+/* continent spacing */
+.continent {
   margin: 8rem 0;
 }
-.header {
+
+/* information unit spacing */
+.information-unit {
+  margin: 8rem 0 2rem 0;
+}
+.unit-title {
   margin-bottom: 2rem;
 }
-
-/*
-====================
-headers
-====================
-*/
+.unit-details {
+}
 
 /*
 ====================
@@ -265,10 +284,6 @@ image overlay
   height: 100%;
   background: hsla(0, 0%, 0%, 0.5);
   z-index: 50;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 .image-overlay .city {
   border: 0;
@@ -289,11 +304,6 @@ contact form
 ====================
 */
 
-/* header */
-.contact h1 {
-  color: hsla(187, 68%, 70%, 1);
-}
-
 /* form */
 .contact {
   color: hsla(187, 68%, 70%, 1);
@@ -305,13 +315,13 @@ form div .column-1-3 {
 }
 label {
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   width: 100%;
   padding: 2% 0;
 }
 label span {
   float: right;
-  font-size: 0.5em;
+  font-size: 0.5rem;
   color: hsla(187, 68%, 70%, 0.75);
 }
 label span:before {
@@ -364,7 +374,7 @@ input:invalid {
 
 /* button */
 .form-button {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   width: 100%;
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(187, 68%, 70%, 1);
@@ -406,11 +416,8 @@ responsive css
 
 @media only screen and (max-width: 600px) {
 
-  h1, h2, h3 {
-
-  }
-  p {
-    font-size: 1em;
+  .text {
+    font-size: 1rem;
   }
 
 }
