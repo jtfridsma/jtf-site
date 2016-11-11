@@ -19,7 +19,12 @@
     <!-- .main-navigation -->
     <nav class="main-navigation" id="navigation" role="navigation">
       <div class="main-navigation-open">
-        <a class="link main-link toggle-link" href="javascript:void(0)" onclick="closeNavigation()">&#215;</a>
+        <a class="link main-link toggle-link" href="javascript:void(0)" onclick="closeNavigation()">
+          <svg height="24" width="24" viewBox="0 0 32 32">
+          	<rect id="forwardslash" fill="hsla(17, 88%, 73%, 1)" x="0" y="13" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="32" height="6"/>
+          	<rect id="backslash" fill="hsla(17, 88%, 73%, 1)" x="13" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="6" height="32"/>
+          </svg>
+        </a>
       </div>
       <div class="navigation main-navigation-list">
         <div class="main-navigation-section">
@@ -51,7 +56,13 @@
     </nav>
 
     <div class="main-navigation-open">
-      <a class="link main-link toggle-link" href="javascript:void(0)" onclick="openNavigation()">&#9776;</a>
+      <a class="link main-link toggle-link" href="javascript:void(0)" onclick="openNavigation()">
+        <svg height="24" width="24" viewBox="0 0 32 32">
+          <rect id="bottom" fill="hsla(17, 88%, 73%, 1)" y="25" width="32" height="6"/>
+          <rect id="middle" fill="hsla(17, 88%, 73%, 1)" y="13" width="32" height="6"/>
+          <rect id="top" fill="hsla(17, 88%, 73%, 1)" y="1" width="32" height="6"/>
+        </svg>
+      </a>
     </div>
 
     <!-- .intro -->
@@ -63,11 +74,18 @@
             <h1 class="header intro-header">Street <br><div class="alternate-opacity"><span class="alternate-opacity-1">A</span>rt<span class="alternate-opacity-2">w</span><div></h1>
           </div>
           <div class="intro-content-scroll">
-            <span class="icon scroll-icon bounce">(scroll down)</span>
+            <span class="icon scroll-icon bounce">
+              <a href="#intro-content-text">
+                <svg height="32" width="32" viewBox="0 0 32 32">
+                  <polygon id="shape" fill="hsla(17, 88%, 73%, 1)" points="16,25.2 2.6,11.8 6.8,7.6 16,16.8 25.2,7.6 29.4,11.8 "/>
+                </svg>
+              </a>
+            </span>
           </div>
-          <div class="intro-content-text column-2-3 column-right last">
-            <p class="text intro-text">In 2015, I decided to turn the loss of a job into an adventure. I called a friend to see if he was interested in joining, and 4 months later we were on the road. This page collects (most of) the street art I saw all around the world. </p>
-            <p class="text intro-text">In 2015, I decided to turn the loss of a job into an adventure. I called a friend to see if he was interested in joining, and 4 months later we were on the road. This page collects (most of) the street art I saw all around the world. </p>
+          <div class="intro-content-text column-2-3 column-right last" id="intro-content-text">
+            <p class="text intro-text"><span class="text-highlight">In early 2015, a window of opportunity came along for me to step outside the life I had in New York City and do something I had never done before: travel outside of North America. (Thanks, Walter Mitty, and Jose Gonzales!) The thought was both terrifying and exhilarating. 3 months later, after recruiting a friend to travel with, focused budgeting and some clever planning, we met in Austin, TX to wrap up any last details in person before setting off.</span></p>
+            <p class="text intro-text"><span class="text-highlight">Around Austin, I started taking photos of all the murals adorning the walls of abandoned buildings and thriving businesses and everything in between. Street art of any kind has always piqued my interest, especially with my background in graphic design, but I had never taken the time to record what caught my eye. What follows is a slightly obsessive collection of street art that I encountered across Europe, Asia, Oceania, and North America.</span></p>
+            <p class="text intro-text"><span class="text-highlight">N.B.<br>All images currently link to posts on my Instagram account. I have yet to implement a slideshow view on this site.</span></p>
           </div>
         </div>
 
@@ -1064,7 +1082,7 @@
     </div><!-- /.contact -->
 
     <!-- footer -->
-    <footer>
+    <footer class="footer">
 
       <!--
       SITE CREDITS

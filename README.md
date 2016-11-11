@@ -65,6 +65,11 @@ Created with Flatiron School's online HTML & CSS class.
 * Updated intro background image, added fallback gradient.
 * Added bounce effect to scroll icon placeholder.
 
+11 NOV 2016
+* Added SVG icons.
+* Updated intro and continent navigation styles.
+* Quick updates to contact form spacing.
+
 ---
 
 #### To Do
@@ -82,5 +87,4 @@ Created with Flatiron School's online HTML & CSS class.
 
 * Grid images need placeholder (div is collapsed before image load – should be 288x288), preferably code with background color.
 * Fix `<span>*Required</span>` vertical alignment in contact form.
-* Contact form margin and padding issues in desktop size.
 * Contact form input rounded border in mobile.
