@@ -69,6 +69,7 @@ Created with Flatiron School's online HTML & CSS class.
 * Added SVG icons.
 * Updated intro and continent navigation styles.
 * Quick updates to contact form spacing.
+* Add jquery with smooth scrolling js snippet.
 
 ---
 

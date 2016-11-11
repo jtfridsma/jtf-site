@@ -43,7 +43,7 @@
         </div>
         <div class="main-navigation-section">
           <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#" onclick="closeNavigation()">Home</a>
+            <a class="link main-link" href="#intro" onclick="closeNavigation()">Home</a>
           </div>
           <div class="navigation-item main-avigation-item">
             <a class="link main-link" href="#" onclick="closeNavigation()">About</a>
@@ -66,7 +66,7 @@
     </div>
 
     <!-- .intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
       <div class="wrapper">
 
         <div class="intro-content clearfix">
@@ -1097,6 +1097,24 @@
 
     <!-- script : lazysizes js -->
     <script src="js/lazysizes.min.js"></script>
+    <!-- script : jquery + smooth-scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000); // scroll speed in milliseconds
+              return false;
+            }
+          }
+        });
+      });
+    </script>
     <!-- script : simple menu overlay js  -->
     <script>
       function openNavigation() { document.getElementById("navigation").style.visibility = "visible"; }
