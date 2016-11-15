@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>STREET ART RTW : Documenting Inspired Walls All Around The World</title>
+    <title>STREET ART RTW : Documenting Inspired Walls Around The World</title>
     <meta name="description" content="Street art seen around the world.">
     <meta name="keywords" content="Street, Art, Graffiti, Global, Around, World, RTW, Europe, Asia, Oceania, North, America">
 
@@ -16,51 +16,48 @@
   </head>
   <body>
 
-    <!-- .main-navigation -->
-    <nav class="main-navigation" id="navigation" role="navigation">
-      <div class="main-navigation-open">
-        <a class="link main-link toggle-link" href="javascript:void(0)" onclick="closeNavigation()">
+
+    <!-- .navigation -->
+    <nav class="navigation" id="navigation" role="navigation">
+      <div class="navigation-toggle navigation-toggle--close">
+        <a href="#!">
           <svg height="24" width="24" viewBox="0 0 32 32">
-          	<rect id="forwardslash" fill="hsla(17, 88%, 73%, 1)" x="0" y="13" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="32" height="6"/>
-          	<rect id="backslash" fill="hsla(17, 88%, 73%, 1)" x="13" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="6" height="32"/>
+          	<rect id="line--1" fill="hsla(17, 88%, 73%, 1)" x="0" y="13" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="32" height="6"/>
+          	<rect id="line--2" fill="hsla(17, 88%, 73%, 1)" x="13" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="6" height="32"/>
           </svg>
         </a>
       </div>
-      <div class="navigation main-navigation-list">
-        <div class="main-navigation-section">
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#europe" onclick="closeNavigation()">Europe</a>
+      <div class="navigation-list">
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#europe">Europe</a>
           </div>
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#asia" onclick="closeNavigation()">Asia</a>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#asia">Asia</a>
           </div>
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#oceania" onclick="closeNavigation()">Oceania</a>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#oceania">Oceania</a>
           </div>
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#north-america" onclick="closeNavigation()">North America</a>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#north-america">North America</a>
           </div>
-        </div>
-        <div class="main-navigation-section">
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#intro" onclick="closeNavigation()">Home</a>
+          <div class="navigation-item navigation-item--space-above">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#intro">Home</a>
           </div>
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#" onclick="closeNavigation()">About</a>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#">About</a>
           </div>
-          <div class="navigation-item main-avigation-item">
-            <a class="link main-link" href="#contact" onclick="closeNavigation()">Contact</a>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#contact">Contact</a>
           </div>
-        </div>
       </div>
-    </nav>
+    </nav><!-- .navigation -->
 
-    <div class="main-navigation-open">
-      <a class="link main-link toggle-link" href="javascript:void(0)" onclick="openNavigation()">
+    <div class="navigation-toggle navigation-toggle--open">
+      <a href="#!">
         <svg height="24" width="24" viewBox="0 0 32 32">
-          <rect id="bottom" fill="hsla(17, 88%, 73%, 1)" y="25" width="32" height="6"/>
-          <rect id="middle" fill="hsla(17, 88%, 73%, 1)" y="13" width="32" height="6"/>
-          <rect id="top" fill="hsla(17, 88%, 73%, 1)" y="1" width="32" height="6"/>
+          <rect id="line--top" fill="hsla(17, 88%, 73%, 1)" y="1" width="32" height="6"/>
+          <rect id="line--middle" fill="hsla(17, 88%, 73%, 1)" y="13" width="32" height="6"/>
+          <rect id="line--bottom" fill="hsla(17, 88%, 73%, 1)" y="25" width="32" height="6"/>
         </svg>
       </a>
     </div>
@@ -1095,11 +1092,16 @@
 
     </footer>
 
-    <!-- script : lazysizes js -->
-    <script src="js/lazysizes.min.js"></script>
-    <!-- script : jquery + smooth-scroll -->
+    <!-- script : jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <!-- script : navigation toggle -->
+    <script>
+      $('.navigation-toggle').on('click', function(){
+        $('.navigation').toggleClass('navigation--open');
+      })
+    </script>
+    <!-- script : smooth scroll-->
+    <script>
       $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -1115,11 +1117,8 @@
         });
       });
     </script>
-    <!-- script : simple menu overlay js  -->
-    <script>
-      function openNavigation() { document.getElementById("navigation").style.visibility = "visible"; }
-      function closeNavigation() { document.getElementById("navigation").style.visibility = "hidden"; }
-    </script>
+    <!-- script : lazysizes -->
+    <script src="js/lazysizes.min.js"></script>
 
   </body>
 </html>
