@@ -71,14 +71,15 @@ Created with Flatiron School's online HTML & CSS class.
 * Quick updates to contact form spacing.
 * Add jQuery with smooth scrolling js snippet.
 
-11 NOV 2016
+15 NOV 2016
 * Implement new jQuery navigation toggle.
+* Updated main and continent nav styles.
+* Beginning to resolve proper BEM-style classes.
 
 ---
 
 #### To Do
 
-* Define `nav` UX/UI and styles.
 * Add remaining country images (Germany, onward) with retina capability.
 * Add "[icon?] View On Instagram" to image overlay.
 * Create About page.
@@ -92,3 +93,5 @@ Created with Flatiron School's online HTML & CSS class.
 * Grid images need placeholder (div is collapsed before image load – should be 288x288), preferably code with background color.
 * Fix `<span>*Required</span>` vertical alignment in contact form.
 * Contact form input rounded border in mobile.
+
+#### Future Goals
