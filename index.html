@@ -19,7 +19,7 @@
     <!-- .navigation -->
     <nav class="navigation" id="navigation" role="navigation">
       <div class="navigation-toggle navigation-toggle--close">
-        <a href="#!">
+        <a>
           <svg height="24" width="24" viewBox="0 0 32 32">
           	<rect id="line--1" fill="hsla(17, 88%, 73%, 1)" x="0" y="13" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="32" height="6"/>
           	<rect id="line--2" fill="hsla(17, 88%, 73%, 1)" x="13" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="6" height="32"/>
@@ -52,7 +52,7 @@
     </nav><!-- .navigation -->
 
     <div class="navigation-toggle navigation-toggle--open">
-      <a href="#!">
+      <a>
         <svg height="24" width="24" viewBox="0 0 32 32">
           <rect id="line--top" fill="hsla(17, 88%, 73%, 1)" y="1" width="32" height="6"/>
           <rect id="line--middle" fill="hsla(17, 88%, 73%, 1)" y="13" width="32" height="6"/>
@@ -214,20 +214,41 @@
                 </div>
               </div><!-- /.image-grid-row -->
 
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/7UTCPhCQvC/" target="_blank">
-                    <div class="image-overlay"><p class="city">Reykjavík</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/7UTCPhCQvC/media" data-srcset="https://www.instagram.com/p/7UTCPhCQvC/media?size=l 2x" alt="Reykjavík">
-                  </a>
+
+
+              <div class="more-images">
+
+                <div class="image-grid-row clearfix">
+                  <div class="image column column--1-3">
+                    <a href="https://www.instagram.com/p/7UTCPhCQvC/" target="_blank">
+                      <div class="image-overlay"><p class="city">Reykjavík</p></div>
+                      <img class="lazyload" data-src="https://www.instagram.com/p/7UTCPhCQvC/media" data-srcset="https://www.instagram.com/p/7UTCPhCQvC/media?size=l 2x" alt="Reykjavík">
+                    </a>
+                  </div>
+                  <div class="image column column--1-3">
+                    <a href="https://www.instagram.com/p/7UTEAriQvH/" target="_blank">
+                      <div class="image-overlay"><p class="city">Reykjavík</p></div>
+                      <img class="lazyload" data-src="https://www.instagram.com/p/7UTEAriQvH/media" data-srcset="https://www.instagram.com/p/7UTEAriQvH/media?size=l 2x" alt="Reykjavík">
+                    </a>
+                  </div>
+                </div><!-- /.image-grid-row -->
+
+                <div class="more-images-toggle more-images-toggle--close">
+                  <button type="button" name="button">CLOSE</button>
                 </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/7UTEAriQvH/" target="_blank">
-                    <div class="image-overlay"><p class="city">Reykjavík</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/7UTEAriQvH/media" data-srcset="https://www.instagram.com/p/7UTEAriQvH/media?size=l 2x" alt="Reykjavík">
-                  </a>
+
+              </div>
+
+              <div class="more-images-toggle--show">
+                <div class="more-images-toggle more-images-toggle--open">
+                  <button type="button" name="button">OPEN</button>
                 </div>
-              </div><!-- /.image-grid-row -->
+              </div>
+
+
+
+
+
             </div><!-- /.image-grid -->
           </div><!-- /.country -->
 
@@ -1099,6 +1120,12 @@
     <script>
       $('.navigation-toggle').on('click', function(){
         $('.navigation').toggleClass('navigation--open');
+      })
+    </script>
+    <!-- script : more images toggle -->
+    <script>
+      $('.more-images-toggle').on('click', function(){
+        $('.more-images').toggleClass('more-images--open');
       })
     </script>
     <!-- script : smooth scroll-->
