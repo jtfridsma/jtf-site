@@ -271,6 +271,13 @@ more images toggle
   opacity: 1;
 }
 
+.button--show {
+  content: 'OPEN';
+}
+.button--hide {
+  content: 'HIDE';
+}
+
 /*
 ====================
 intro

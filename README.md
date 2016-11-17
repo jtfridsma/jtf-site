@@ -76,6 +76,10 @@ Created with Flatiron School's online HTML & CSS class.
 * Updated main and continent nav styles.
 * Beginning to resolve proper BEM-style classes.
 
+17 NOV 2016
+* Implement new jQuery image grid more/less toggle.
+* Add new icon in main navigation.
+
 ---
 
 #### To Do
