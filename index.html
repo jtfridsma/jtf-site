@@ -76,23 +76,24 @@
           <div class="intro-header">
             <h1 class="header header--intro">Street <br><div class="toggle-opacity"><span class="toggle-opacity--1">A</span>rt<span class="toggle-opacity--2">w</span><div></h1>
           </div>
-          <div class="intro-scroll">
-            <span class="icon scroll-icon bounce">
-              <a href="#intro">
-                <svg height="32" width="32" viewBox="0 0 32 32">
-                  <polygon id="arrow" fill="hsla(17, 88%, 73%, 1)" points="16,25.2 2.6,11.8 6.8,7.6 16,16.8 25.2,7.6 29.4,11.8 "/>
-                </svg>
-              </a>
-            </span>
-          </div>
           <div class="column column--2-3 column--right last">
-            <div class="intro-content-text" id="intro">
-              <p class="text text--intro"><span class="highlight">In early 2015, a window of opportunity came along for me to step outside the life I had in New York City and do something I had never done before: travel outside of North America. (Thanks, Walter Mitty, and Jose Gonzales!) The thought was both terrifying and exhilarating. 3 months later, after recruiting a friend to travel with, focused budgeting and some clever planning, we met in Austin, TX to wrap up any last details in person before setting off.</span></p>
-              <p class="text text--intro"><span class="highlight">Around Austin, I started taking photos of all the murals adorning the walls of abandoned buildings and thriving businesses and everything in between. Street art of any kind has always piqued my interest, especially with my background in graphic design, but I had never taken the time to record what caught my eye. What follows is a slightly obsessive collection of street art that I encountered across Europe, Asia, Oceania, and North America.</span></p>
-              <p class="text text--intro"><span class="highlight">N.B.<br>All images currently link to posts on my Instagram account. I have yet to implement a slideshow view on this site.</span></p>
+            <div class="row" id="intro">
+              <p class="row text text--large"><span class="highlight">In early 2015, a window of opportunity came along for me to step outside the life I had in New York City and do something I had never done before: travel outside of North America. (Thanks, Walter Mitty, and Jose Gonzales!) The thought was both terrifying and exhilarating. 3 months later, after recruiting a friend to travel with, focused budgeting and some clever planning, we met in Austin, TX to wrap up any last details in person before setting off.</span></p>
+              <p class="row text text--large"><span class="highlight">Around Austin, I started taking photos of all the murals adorning the walls of abandoned buildings and thriving businesses and everything in between. Street art of any kind has always piqued my interest, especially with my background in graphic design, but I had never taken the time to record what caught my eye. What follows is a slightly obsessive collection of street art that I encountered across Europe, Asia, Oceania, and North America.</span></p>
+              <p class="row text text--large"><span class="highlight">N.B.<br>All images currently link to posts on my Instagram account. I have yet to implement a slideshow view on this site.</span></p>
             </div>
           </div>
         </div>
+        <div class="intro-scroll">
+          <span class="icon scroll-icon bounce">
+            <a href="#intro">
+              <svg height="32" width="32" viewBox="0 0 32 32">
+                <polygon id="arrow" fill="hsla(17, 88%, 73%, 1)" points="16,25.2 2.6,11.8 6.8,7.6 16,16.8 25.2,7.6 29.4,11.8 "/>
+              </svg>
+            </a>
+          </span>
+        </div>
+
 
       </div><!-- /.wrapper -->
     </div><!-- /.intro -->
@@ -104,10 +105,10 @@
         <!-- #EUROPE -->
         <div class="continent" id="europe">
           <div class="unit">
-            <div class="unit-title">
+            <div class="row row--title">
               <h2 class="header header--continent">Europe</h2>
             </div>
-            <div class="unit-info clearfix">
+            <div class="row row--info clearfix">
               <div class="column column--1-3">
                 <p class="text text--unit text--jump">Jump to...</p>
                 <div class="navigation-list navigation-list--jump">
@@ -138,7 +139,7 @@
                 </div>
               </div>
               <div class="column column--2-3 last">
-                <p class="text text">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text text--large">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>
@@ -146,10 +147,22 @@
           <!-- Iceland -->
           <div class="country" id="iceland">
             <div class="unit">
-              <div class="unit-title">
-                <h3 class="header header--country">Iceland</h3>
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Iceland</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -221,9 +234,7 @@
                 </div>
               </div><!-- /.image-grid-row -->
 
-
-
-              <div class="more-images">
+              <div class="image-toggle image-toggle--iceland">
 
                 <div class="image-grid-row clearfix">
                   <div class="image column column--1-3">
@@ -240,28 +251,36 @@
                   </div>
                 </div><!-- /.image-grid-row -->
 
-              </div>
+              </div><!-- /.image-toggle -->
 
-              <div class="button-toggle">
-                <div class="more-images-toggle more-images-toggle--open">
+              <div>
+                <div class="image-toggle-button image-toggle-button--iceland">
                   <div class="button--show" type="button" name="button"></div>
                 </div>
               </div>
-
-
-
-
 
             </div><!-- /.image-grid -->
           </div><!-- /.country -->
 
           <!-- Netherlands -->
-          <div class="country"  id="netherlands">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Netherlands</h3>
+          <div class="country" id="netherlands">
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Netherlands</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -333,45 +352,68 @@
                 </div>
               </div><!-- /.image-grid-row -->
 
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/7nSkU1CQmp/" target="_blank">
-                    <div class="image-overlay"><p class="city">Utrecht</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/7nSkU1CQmp/media" data-srcset="https://www.instagram.com/p/7nSkU1CQmp/media?size=l 2x" alt="Utrecht">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/7nSqo7iQm5/" target="_blank">
-                    <div class="image-overlay"><p class="city">Utrecht</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/7nSqo7iQm5/media" data-srcset="https://www.instagram.com/p/7nSqo7iQm5/media?size=l 2x" alt="Utrecht">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/7nStlZCQm9/" target="_blank">
-                    <div class="image-overlay"><p class="city">Utrecht</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/7nStlZCQm9/media" data-srcset="https://www.instagram.com/p/7nStlZCQm9/media?size=l 2x" alt="Utrecht">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
+              <div class="image-toggle image-toggle--netherlands">
 
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/7nSzKTiQnH/" target="_blank">
-                    <div class="image-overlay"><p class="city">Utrecht</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/7nSzKTiQnH/media" data-srcset="https://www.instagram.com/p/7nSzKTiQnH/media?size=l 2x" alt="Utrecht">
-                  </a>
+                <div class="image-grid-row clearfix">
+                  <div class="image column column--1-3">
+                    <a href="https://www.instagram.com/p/7nSkU1CQmp/" target="_blank">
+                      <div class="image-overlay"><p class="city">Utrecht</p></div>
+                      <img class="lazyload" data-src="https://www.instagram.com/p/7nSkU1CQmp/media" data-srcset="https://www.instagram.com/p/7nSkU1CQmp/media?size=l 2x" alt="Utrecht">
+                    </a>
+                  </div>
+                  <div class="image column column--1-3">
+                    <a href="https://www.instagram.com/p/7nSqo7iQm5/" target="_blank">
+                      <div class="image-overlay"><p class="city">Utrecht</p></div>
+                      <img class="lazyload" data-src="https://www.instagram.com/p/7nSqo7iQm5/media" data-srcset="https://www.instagram.com/p/7nSqo7iQm5/media?size=l 2x" alt="Utrecht">
+                    </a>
+                  </div>
+                  <div class="image column column--1-3 last">
+                    <a href="https://www.instagram.com/p/7nStlZCQm9/" target="_blank">
+                      <div class="image-overlay"><p class="city">Utrecht</p></div>
+                      <img class="lazyload" data-src="https://www.instagram.com/p/7nStlZCQm9/media" data-srcset="https://www.instagram.com/p/7nStlZCQm9/media?size=l 2x" alt="Utrecht">
+                    </a>
+                  </div>
+                </div><!-- /.image-grid-row -->
+
+                <div class="image-grid-row clearfix">
+                  <div class="image column column--1-3">
+                    <a href="https://www.instagram.com/p/7nSzKTiQnH/" target="_blank">
+                      <div class="image-overlay"><p class="city">Utrecht</p></div>
+                      <img class="lazyload" data-src="https://www.instagram.com/p/7nSzKTiQnH/media" data-srcset="https://www.instagram.com/p/7nSzKTiQnH/media?size=l 2x" alt="Utrecht">
+                    </a>
+                  </div>
+                </div><!-- /.image-grid-row -->
+
+              </div><!-- /.more-images -->
+
+              <div>
+                <div class="image-toggle-button image-toggle-button--netherlands">
+                  <div class="button--show" type="button" name="button"></div>
                 </div>
-              </div><!-- /.image-grid-row -->
+              </div>
+
             </div><!-- /.image-grid -->
           </div><!-- /.country -->
 
           <!-- Belgium -->
           <div class="country" id="belgium">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Belgium</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Belgium</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -405,11 +447,23 @@
 
           <!-- Germany -->
           <div class="country" id="germany">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Germany</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Germany</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -443,11 +497,23 @@
 
           <!-- Denmark -->
           <div class="country" id="denmark">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Denmark</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Denmark</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -481,11 +547,23 @@
 
           <!-- Sweden -->
           <div class="country" id="sweden">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Sweden</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Sweden</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -519,11 +597,23 @@
 
           <!-- Finland -->
           <div class="country" id="finland">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Finland</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Finland</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -557,11 +647,23 @@
 
           <!-- Norway -->
           <div class="country" id="norway">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Norway</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Norway</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -597,44 +699,56 @@
 
         <!-- #ASIA -->
         <div class="continent" id="asia">
-          <div class="information-unit">
-            <div class="unit-title">
-              <h2 class="header continent-header">Asia</h2>
+          <div class="unit">
+            <div class="row row--title">
+              <h2 class="header header--continent">Asia</h2>
             </div>
-            <div class="unit-details clearfix">
+            <div class="row row--info clearfix">
               <div class="column column--1-3">
-                <p class="text unit-navigation-text">Jump to...</p>
-                <div class="navigation unit-navigation">
-                  <div class="navigation-item">
-                    <a class="link" href="#thailand">Thailand</a>
+                <p class="text text--unit text--jump">Jump to...</p>
+                <div class="navigation-list navigation-list--jump">
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#thailand">Thailand</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#cambodia">Cambodia</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#cambodia">Cambodia</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#vietnam">Vietnam</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#vietnam">Vietnam</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#singapore">Singapore</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#singapore">Singapore</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#indonesia">Indonesia</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#indonesia">Indonesia</a>
                   </div>
                 </div>
               </div>
               <div class="column column--2-3 last">
-                <p class="text">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text text--large">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>
 
           <!-- Thailand -->
           <div class="country" id="thailand">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Thailand</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Thailand</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -667,295 +781,97 @@
           </div><!-- /.country -->
 
           <!-- Cambodia -->
-          <div class="country" id="cambodia">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Cambodia</h3>
-              </div>
-              <div class="unit-details clearfix">
-                <div class="column column--2-3 last">
-                  <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="image-grid">
-
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
-            </div><!-- /.image-grid -->
-          </div><!-- /.country -->
 
           <!-- Vietnam -->
-          <div class="country" id="vietnam">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Vietnam</h3>
-              </div>
-              <div class="unit-details clearfix">
-                <div class="column column--2-3 last">
-                  <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="image-grid">
-
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
-            </div><!-- /.image-grid -->
-          </div><!-- /.country -->
 
           <!-- Singapore -->
-          <div class="country" id="singapore">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Singapore</h3>
-              </div>
-              <div class="unit-details clearfix">
-                <div class="column column--2-3 last">
-                  <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="image-grid">
-
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
-            </div><!-- /.image-grid -->
-          </div><!-- /.country -->
 
           <!-- Indonesia -->
-          <div class="country" id="indonesia">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Indonesia</h3>
-              </div>
-              <div class="unit-details clearfix">
-                <div class="column column--2-3 last">
-                  <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="image-grid">
-
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
-            </div><!-- /.image-grid -->
-          </div><!-- /.country -->
 
         </div><!-- /#ASIA -->
 
         <!-- #OCEANIA -->
         <div class="continent" id="oceania">
-          <div class="information-unit">
-            <div class="unit-title">
-              <h2 class="header continent-header">Oceania</h2>
+          <div class="unit">
+            <div class="row row--title">
+              <h2 class="header header--continent">Oceania</h2>
             </div>
-            <div class="unit-details clearfix">
+            <div class="row row--info clearfix">
               <div class="column column--1-3">
-                <p class="text unit-navigation-text">Jump to...</p>
-                <div class="navigation unit-navigation">
-                  <div class="navigation-item">
-                    <a class="link" href="#australia">Australia</a>
+                <p class="text text--unit text--jump">Jump to...</p>
+                <div class="navigation-list navigation-list--jump">
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#australia">Australia</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#hawaii">Hawaii</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#hawaii">USA:Hawaii</a>
                   </div>
                 </div>
               </div>
               <div class="column column--2-3 last">
-                <p class="text">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text text--large">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>
 
           <!-- Australia -->
-          <div class="country" id="australia">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Australia</h3>
-              </div>
-              <div class="unit-details clearfix">
-                <div class="column column--2-3 last">
-                  <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="image-grid">
-
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
-            </div><!-- /.image-grid -->
-          </div><!-- /.country -->
 
           <!-- USA:Hawaii -->
-          <div class="country" id="hawaii">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">USA:Hawaii</h3>
-              </div>
-              <div class="unit-details clearfix">
-                <div class="column column--2-3 last">
-                  <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="image-grid">
-
-              <div class="image-grid-row clearfix">
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-                <div class="image column column--1-3 last">
-                  <a href="https://www.instagram.com/p/BKdZeeuAlYZ/" target="_blank">
-                    <div class="image-overlay"><p class="city">cats</p></div>
-                    <img class="lazyload" data-src="https://www.instagram.com/p/BKdZeeuAlYZ/media" alt="cats">
-                  </a>
-                </div>
-              </div><!-- /.image-grid-row -->
-            </div><!-- /.image-grid -->
-          </div><!-- /.country -->
 
         </div><!-- /#OCEANIA -->
 
         <!-- #NORTH-AMERICA -->
         <div class="continent" id="north-america">
-          <div class="information-unit">
-            <div class="unit-title">
-              <h2 class="header continent-header">North America</h2>
+          <div class="unit">
+            <div class="row row--title">
+              <h2 class="header header--continent">North America</h2>
             </div>
-            <div class="unit-details clearfix">
+            <div class="row row--info clearfix">
               <div class="column column--1-3">
-                <p class="text unit-navigation-text">Jump to...</p>
-                <div class="navigation unit-navigation">
-                  <div class="navigation-item">
-                    <a class="link" href="#canada">Canada</a>
+                <p class="text text--unit text--jump">Jump to...</p>
+                <div class="navigation-list navigation-list--jump">
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#canada">Canada</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#usa">USA</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#usa">USA</a>
                   </div>
-                  <div class="navigation-item">
-                    <a class="link" href="#puerto-rico">Puerto Rico</a>
+                  <div class="navigation-item navigation-item--jump">
+                    <a class="link link--jump link--strikethrough" href="#puerto-rico">Puerto Rico</a>
                   </div>
                 </div>
               </div>
               <div class="column column--2-3 last">
-                <p class="text">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text text--large">Info about this continent. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>
 
           <!-- Canada -->
           <div class="country" id="canada">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Canada</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Canada</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -989,11 +905,23 @@
 
           <!-- USA -->
           <div class="country" id="usa">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">USA</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">USA</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -1027,11 +955,23 @@
 
           <!-- Puerto Rico -->
           <div class="country" id="puerto-rico">
-            <div class="information-unit">
-              <div class="unit-title">
-                <h3 class="header country-header">Puerto Rico</h3>
+            <div class="unit">
+              <div class="row row--title clearfix">
+                <div class="column column--2-3 column--right last">
+                  <h3 class="header header--country">Puerto Rico</h3>
+                </div>
               </div>
-              <div class="unit-details clearfix">
+              <div class="row row--info clearfix">
+                <div class="column column--1-3">
+                  <div class="navigation-list navigation-list--jump">
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#netherlands">Previous Country</a>
+                    </div>
+                    <div class="navigation-item navigation-item--jump">
+                      <a class="link link--jump link--strikethrough" href="#belgium">Next Country</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="column column--2-3 last">
                   <p class="text">Info about this country. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -1127,14 +1067,14 @@
     </script>
     <!-- script : more images toggle -->
     <script>
-      $('.more-images-toggle').on('click', function(){
-        $('.more-images').toggleClass('more-images--open');
+      $('.image-toggle-button--iceland').on('click', function(){
+        $('.image-toggle--iceland').toggleClass('image-toggle--open');
+      })
+      $('.image-toggle-button--netherlands').on('click', function(){
+        $('.image-toggle--netherlands').toggleClass('image-toggle--open');
       })
       $('.button--show').on('click', function(){
-        $('.button--show').toggleClass('button--hide');
-      })
-      $('.button--hide').on('click', function(){
-        $('.button--hide').toggleClass('button--show');
+        $().toggleClass('button--hide');
       })
     </script>
     <!-- script : smooth scroll-->
