@@ -354,8 +354,11 @@ main
 */
 
 .main {
-  position: relative;
   background: hsla(0, 0%, 100%, 1);
+}
+
+.section {
+  position: relative;
   padding: 8rem 0;
   z-index: 30;
 }
@@ -365,16 +368,6 @@ main
   margin: 8rem 0;
 }
 
-/* information unit spacing */
-.country > .information-unit {
-  margin-top: 8rem;
-}
-.unit-title,
-.unit-details {
-  margin-bottom: 2rem;
-}
-.unit-details {
-}
 
 /*
 ====================
