@@ -109,6 +109,13 @@ text styles
   font-size: 1.125rem;
   line-height: 1.625em;
 }
+.text--larger {
+  font-size: 1.5rem;
+  line-height: 1.75em;
+}
+.text--right {
+  text-align: right;
+}
 
 /* headers */
 .header {
@@ -128,7 +135,7 @@ text styles
 }
 
 /* underline  */
-.header--continent {
+.header--underline {
   border-bottom: 6px solid hsla(188, 70%, 85%, 1);
 }
 
@@ -187,6 +194,7 @@ transitions
 
 .navigation,
 .link,
+.button,
 .toggle-opacity--1,
 .toggle-opacity--2,
 .image-overlay {
@@ -287,12 +295,6 @@ intro
 
 .home {
   min-height: 100vh;
-  /*
-  background: hsla(49, 14%, 32%, 1);
-  background: -moz-linear-gradient(left, hsla(76, 21%, 28%, 1) 0%, hsla(15, 12%, 39%, 1) 25%, hsla(24, 8%, 61%, 1) 50%, hsla(49, 14%, 32%, 1) 75%, hsla(76, 21%, 28%, 1) 100%);
-  background: -webkit-linear-gradient(left, hsla(76, 21%, 28%, 1) 0%, hsla(15, 12%, 39%, 1) 25%, hsla(24, 8%, 61%, 1) 50%, hsla(49, 14%, 32%, 1) 75%, hsla(76, 21%, 28%, 1) 100%);
-  background: linear-gradient(to right, hsla(76, 21%, 28%, 1) 0%, hsla(15, 12%, 39%, 1) 25%, hsla(24, 8%, 61%, 1) 50%, hsla(49, 14%, 32%, 1) 75%, hsla(76, 21%, 28%, 1) 100%);
-  */
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.5)), url("../images/intro-background.jpg");
   background-size: cover;
   background-position: bottom;
@@ -302,6 +304,7 @@ intro
 .intro-header {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -389,8 +392,10 @@ button
 .button:hover {
   background-color: hsla(187, 68%, 70%, 1);
 }
-.button--show {}
-.button--hide {}
+.button--show {
+}
+.button--hide {
+}
 
 /*
 ====================
