@@ -18,7 +18,7 @@ body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
   font-size: 100%;
   font-weight: 300;
-  color: hsla(17, 88%, 73%, 1);
+  color: hsla(19, 88%, 73%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
 a,
@@ -38,12 +38,12 @@ img {
 
 /* selection */
 ::selection {
-  color: hsla(17, 88%, 73%, 1);
-  background-color: hsla(17, 88%, 73%, 0.5);
+  color: hsla(19, 88%, 73%, 1);
+  background-color: hsla(19, 88%, 73%, 0.5);
 }
 ::-moz-selection {
-  color: hsla(17, 88%, 73%, 1);
-  background-color: hsla(17, 88%, 73%, 0.5);
+  color: hsla(19, 88%, 73%, 1);
+  background-color: hsla(19, 88%, 73%, 0.5);
 }
 
 /*
@@ -112,7 +112,7 @@ text styles
 
 /* headers */
 .header {
-  color: hsla(187, 68%, 85%, 1);
+  color: hsla(188, 70%, 85%, 1);
   text-transform: uppercase;
 }
 .header--intro {
@@ -129,12 +129,12 @@ text styles
 
 /* underline  */
 .header--continent {
-  border-bottom: 4px solid hsla(187, 68%, 70%, 0.5);
+  border-bottom: 6px solid hsla(188, 70%, 85%, 1);
 }
 
 /* links */
 .link {
-  color: hsla(17, 88%, 73%, 1);
+  color: hsla(19, 88%, 73%, 1);
 }
 .link:active {
 }
@@ -154,7 +154,7 @@ text styles
 	width: 100%;
 	height: 4px;
 	margin-top: -0.5em;
-	background: hsla(17, 88%, 73%, 0.25);
+	background: hsla(19, 88%, 73%, 0.25);
 	transform-origin: center left;
 	animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1);
 	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
@@ -222,8 +222,8 @@ main navigation
 .navigation-item {
   margin: 0.5rem 0;
 }
-.navigation-item--space-above {
-  margin-top: 2.5rem;
+.navigation-spacer {
+  margin: 2.5rem 0;
 }
 .navigation-toggle--close,
 .navigation-toggle--open {
@@ -368,6 +368,29 @@ main
   margin: 8rem 0;
 }
 
+/* country spacing */
+.country {
+  margin-top: 8rem;
+}
+
+/*
+====================
+button
+====================
+*/
+
+.button {
+  padding: 1rem 0;
+  text-align: center;
+  color: hsla(0 , 0%, 100%, 1);
+  background-color: hsla(187, 68%, 70%, 0.5);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: hsla(187, 68%, 70%, 1);
+}
+.button--show {}
+.button--hide {}
 
 /*
 ====================
@@ -425,7 +448,7 @@ contact form
 .contact {
   position: relative;
   color: hsla(187, 68%, 70%, 1);
-  background: hsla(187, 68%, 85%, 1);
+  background: hsla(188, 70%, 85%, 1);
   padding: 8rem 0;
   z-index: 20;
 }
@@ -509,7 +532,7 @@ input:invalid {
 
 .footer {
   height: 8rem;
-  background-color: hsla(17, 88%, 73%, 1);
+  background-color: hsla(19, 88%, 73%, 1);
 }
 
 
