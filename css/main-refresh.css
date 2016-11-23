@@ -1,0 +1,104 @@
+/*
+====================
+layout
+====================
+*/
+
+/* section */
+.section {}
+
+.section--background-image {
+  min-height: 100vh;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.5)), url("../images/background-image.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.section--padding {
+  padding: 8rem 0;
+}
+
+.section--padding-small {
+  padding: 2rem 0;
+}
+
+.section--margin {
+  margin: 8rem 0;
+}
+
+.section--flex-vertical {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--flex-center {}
+
+/* wrapper */
+.wrapper {
+  max-width: 900px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+/*
+====================
+home
+====================
+*/
+
+.home {}
+
+.home__content {}
+
+/*
+====================
+intro
+====================
+*/
+
+.intro {}
+
+.intro__content {}
+
+/*
+====================
+main
+====================
+*/
+
+.main {}
+
+.main__content {}
+
+/*
+====================
+about
+====================
+*/
+
+.about {}
+
+.about__content {}
+
+/*
+====================
+contact
+====================
+*/
+
+.contact {}
+
+.contact__content {}
+
+/*
+====================
+footer
+====================
+*/
+
+.footer {}
+
+.footer__content {}
