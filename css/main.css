@@ -103,15 +103,14 @@ text styles
 
 /* text */
 .text {
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.625em;
 }
 .text--large {
   font-size: 1.125rem;
-  line-height: 1.625em;
 }
 .text--larger {
   font-size: 1.5rem;
-  line-height: 1.75em;
 }
 .text--right {
   text-align: right;
@@ -261,30 +260,19 @@ main navigation
 
 /*
 ====================
-more images toggle
+image toggle
 ====================
 */
+
 .image-toggle {
   display: none;
   opacity: 0;
   visibility: hidden;
 }
-.image-toggle-button--close,
-.image-toggle-button--open {
-  cursor: pointer;
-}
-
 .image-toggle--open {
   display: block;
   visibility: visible;
   opacity: 1;
-}
-
-.button--show {
-  content: 'OPEN';
-}
-.button--hide {
-  content: 'HIDE';
 }
 
 /*

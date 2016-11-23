@@ -259,7 +259,7 @@
 
               <div>
                 <div class="image-toggle-button image-toggle-button--iceland">
-                  <div class="button button--show" data-text-original="+ More" data-text-swap="- Less">+ More</div>
+                  <div class="button" data-text-original="+ More" data-text-swap="- Less">+ More</div>
                 </div>
               </div>
 
@@ -392,7 +392,7 @@
 
               <div>
                 <div class="image-toggle-button image-toggle-button--netherlands">
-                  <div class="button button--show" data-text-original="+ More" data-text-swap="- Less">+ More</div>
+                  <div class="button" data-text-original="+ More" data-text-swap="- Less">+ More</div>
                 </div>
               </div>
 
@@ -1076,7 +1076,7 @@
       $('.image-toggle-button--netherlands').on('click', function(){
         $('.image-toggle--netherlands').toggleClass('image-toggle--open');
       });
-      $('.button--show').on('click', function(){  // swap button text on click
+      $('.button').on('click', function(){  // swap button text on click
         var el = $(this);
         el.text() == el.data("text-swap")
           ? el.text(el.data("text-original"))
