@@ -7,7 +7,20 @@ color reference
 /*
 white: hsla(0, 0%, 100%, 1);
 black: hsla(0, 0%, 0%, 1);
+black transparent: hsla(0, 0%, 0%, 0.5);
 */
+
+/*
+====================
+global
+====================
+*/
+
+img {
+  position: absolute;
+  max-width: 100%;
+  vertical-align: top;
+}
 
 /*
 ====================
@@ -96,6 +109,10 @@ z-index
 .footer {
   z-index: 10;
   position: relative;
+}
+
+.image__overlay {
+  z-index: 30;
 }
 
 /*
@@ -194,6 +211,30 @@ image grid
   margin-bottom: 2%;
 }
 
+/* image */
+.image__container {
+  position: relative;
+  height: 0;
+  background-color: grey;
+  padding-bottom: 32%;
+}
+
+.image__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 6%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* image hover image */
+.image__container:hover .image__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* toggle */
 .image-grid__toggle {}
 
@@ -241,6 +282,10 @@ text
 
 .text--center {
   text-align: center;
+}
+
+.text--overlay {
+  margin: 0;
 }
 
 .text--form-label {
