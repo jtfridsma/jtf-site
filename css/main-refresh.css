@@ -212,6 +212,10 @@ image grid
 }
 
 /* image */
+.image--circle {
+  border-radius: 50%;
+}
+
 .image__container {
   position: relative;
   height: 0;
@@ -238,9 +242,16 @@ image grid
 /* toggle */
 .image-grid__toggle {}
 
-.image-grid__toggle--hide {}
+.image-grid__toggle--hide {
+  display: none;
+}
 
-.image-grid__toggle--show {}
+.image-grid__toggle--show {
+  display: block;
+}
+
+/* image grid countries */
+.image-grid--iceland {}
 
 /*
 ====================
@@ -288,13 +299,17 @@ text
   margin: 0;
 }
 
+.text--swap {}
+
 .text--form-label {
   display: block;
 }
 
 .text--form-input {}
 
-.text--form-button {}
+.text--white {
+  color: hsla(0, 0%, 100%, 1);
+}
 
 /*
 ====================
@@ -320,9 +335,6 @@ button
   width: 100%;
   padding: 1em 0;
   background-color: grey;
-}
-
-.button--toggle {
   display: flex;
   justify-content: center;
 }
@@ -330,6 +342,22 @@ button
 .button--form {
   border: none;
 }
+
+/* button swap */
+
+.button--swap {}
+
+.button--toggle > .text--less,
+.button--less > .text--more {
+  display: none;
+}
+
+.button--less > .text--less {
+  display: block;
+}
+
+/* image grid button */
+.button--iceland {}
 
 /*
 ====================
