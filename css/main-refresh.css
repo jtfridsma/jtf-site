@@ -16,7 +16,7 @@ google fonts
 ====================
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
 /*
@@ -73,6 +73,7 @@ layout
 
 .section--padding {
   padding: 8rem 0;
+  min-height: auto;
 }
 
 .section--padding-small {
@@ -182,7 +183,7 @@ home, intro, main, about, contact, footer
 
 /* about */
 .about {
-  background-color: hsla(0, 0%, 95%, 1);
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.5)), url("../images/about-background-image.jpg");
 }
 
 .about__container {}
@@ -193,7 +194,7 @@ home, intro, main, about, contact, footer
 
 /* contact */
 .contact {
-  background-color: inherit;
+  background-color: hsla(0, 0%, 95%, 1);
 }
 
 .contact__container {}
@@ -327,6 +328,7 @@ header
 */
 
 .header {
+  font-weight: 500;
   color: hsla(19, 88%, 75%, 1);
   margin-bottom: 2rem;
 }
