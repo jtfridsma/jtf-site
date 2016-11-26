@@ -12,9 +12,40 @@ black transparent: hsla(0, 0%, 0%, 0.5);
 
 /*
 ====================
+google fonts
+====================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400');
+
+/*
+====================
 global
 ====================
 */
+
+body {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 100%;
+  font-weight: 300;
+  color: hsla(0, 0%, 15%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: hsla(0, 0%, 65%, 1);
+}
 
 img {
   position: absolute;
@@ -86,6 +117,11 @@ layout
   margin-right: 0;
 }
 
+.column--about {
+  width: 64%;
+  margin-left: 2%;
+}
+
 /* clearfix */
 .clearfix::after {
   content: '';
@@ -112,7 +148,7 @@ z-index
 }
 
 .image__overlay {
-  z-index: 30;
+  z-index: 20;
 }
 
 /*
@@ -212,6 +248,8 @@ image grid
 }
 
 /* image */
+.image {}
+
 .image--circle {
   border-radius: 50%;
 }
@@ -224,10 +262,12 @@ image grid
 }
 
 .image__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 6%;
   background-color: hsla(0, 0%, 0%, 0.5);
   opacity: 0;
   visibility: hidden;
@@ -252,6 +292,23 @@ image grid
 
 /* image grid countries */
 .image-grid--iceland {}
+.image-grid--netherlands {}
+.image-grid--belgium {}
+.image-grid--germany {}
+.image-grid--denmark {}
+.image-grid--sweden {}
+.image-grid--finland {}
+.image-grid--norway {}
+.image-grid--thailand {}
+.image-grid--cambodia {}
+.image-grid--vietnam {}
+.image-grid--singapore {}
+.image-grid--indonesia {}
+.image-grid--australia {}
+.image-grid--hawaii {}
+.image-grid--canada {}
+.image-grid--usa {}
+.image-grid--puerto-rico {}
 
 /*
 ====================
@@ -259,13 +316,21 @@ header
 ====================
 */
 
-.header {}
+.header {
+  margin-bottom: 2rem;
+}
 
-.header--home {}
+.header--home {
+  font-size: 6rem;
+}
 
-.header--continent {}
+.header--continent {
+  font-size: 3rem;
+}
 
-.header--country {}
+.header--country {
+  font-size: 1.5rem;
+}
 
 .header--underline {
   border-bottom: 1px solid grey;
@@ -277,7 +342,9 @@ text
 ====================
 */
 
-.text {}
+.text {
+  line-height: 1.5em;
+}
 
 .text--small {
   font-size: 0.75rem;
@@ -295,20 +362,33 @@ text
   text-align: center;
 }
 
-.text--overlay {
-  margin: 0;
+.text--white {
+  color: hsla(0, 0%, 100%, 1);
 }
 
-.text--swap {}
+.text--overlay {
+  margin-top: 16%;
+}
+
+.text--overlay::after {
+  content: '- View on Instagram -';
+  display: block;
+  margin-top: 16%;
+  font-size: 0.75rem;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.text--more {}
+
+.text--less {}
 
 .text--form-label {
   display: block;
 }
 
-.text--form-input {}
-
-.text--white {
-  color: hsla(0, 0%, 100%, 1);
+.text--form-input {
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 /*
@@ -339,14 +419,15 @@ button
   justify-content: center;
 }
 
+.button:hover {
+  background-color: blue;
+}
+
 .button--form {
   border: none;
 }
 
-/* button swap */
-
-.button--swap {}
-
+/* button toggle */
 .button--toggle > .text--less,
 .button--less > .text--more {
   display: none;
@@ -358,6 +439,23 @@ button
 
 /* image grid button */
 .button--iceland {}
+.button--netherlands {}
+.button--belgium {}
+.button--germany {}
+.button--denmark {}
+.button--sweden {}
+.button--finland {}
+.button--norway {}
+.button--thailand {}
+.button--cambodia {}
+.button--vietnam {}
+.button--singapore {}
+.button--indonesia {}
+.button--australia {}
+.button--hawaii {}
+.button--canada {}
+.button--usa {}
+.button--puerto-rico {}
 
 /*
 ====================
@@ -373,9 +471,16 @@ form
   margin-top: 1rem;
 }
 
+.form__label {
+  margin-bottom: 0.5rem;
+}
+
 .form__input {
   max-width: 100%;
   width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  background-color: grey;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
