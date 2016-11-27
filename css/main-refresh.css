@@ -281,12 +281,12 @@ image grid
 }
 
 /* image hover image */
-.image__container:hover .image__overlay {
+.image__container:hover > .image__link > .image__overlay {
   opacity: 1;
   visibility: visible;
 }
 
-.image__container:hover .image {
+.image__container:hover > .image__link > .image {
   transform: scale(1.0125);
 }
 
@@ -514,4 +514,33 @@ transitions
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+/*
+====================
+lazyload
+====================
+*/
+
+/* hide broken image icon (only when lazyload is applied) */
+img:not([src]) {
+  visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}
+
+/* content reveal effect */
+.teaser.lazyload {
+	opacity: 0;
+	transform: scale(0.8);
+}
+
+.teaser.lazyloaded {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 500ms;
 }
