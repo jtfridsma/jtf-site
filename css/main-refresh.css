@@ -162,7 +162,7 @@ home, intro, main, about, contact, footer
 
 /* home */
 .home {
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.5)), url("../images/background-image.jpg");
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.5)), url("../images/background-image.jpg");
 }
 
 .home__container {}
@@ -172,7 +172,9 @@ home, intro, main, about, contact, footer
 .home__content {}
 
 /* intro */
-.intro {}
+.intro {
+  background: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.5));
+}
 
 .intro__container {}
 
