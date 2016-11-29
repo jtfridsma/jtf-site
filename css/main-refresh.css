@@ -154,6 +154,15 @@ z-index
   z-index: 20;
 }
 
+.navigation-toggle--show {
+  z-index: 30;
+}
+
+.navigation {
+  z-index: 40;
+}
+
+
 /*
 ====================
 home, intro, main, about, contact, footer
@@ -331,7 +340,8 @@ header
 
 .header {
   font-weight: 500;
-  color: hsla(19, 88%, 75%, 1);
+  /* color: hsla(19, 88%, 75%, 1); */
+  color: hsla(330, 100%, 80%, 1);
   margin-bottom: 2rem;
 }
 
@@ -347,11 +357,13 @@ header
 
 .header--country {
   font-size: 1.5rem;
-  border-bottom: 3px solid hsla(19, 88%, 75%, 1);;
+  /* border-bottom: 3px solid hsla(19, 88%, 75%, 1); */
+  border-bottom: 3px solid hsla(330, 100%, 80%, 1);
 }
 
 .header--underline {
-  border-bottom: 5px solid hsla(19, 88%, 75%, 1);;
+  /* border-bottom: 5px solid hsla(19, 88%, 75%, 1); */
+  border-bottom: 5px solid hsla(330, 100%, 80%, 1);
 }
 
 /*
@@ -411,6 +423,49 @@ text
 
 /*
 ====================
+navigation
+====================
+*/
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  background: hsla(0, 0%, 100%, 1);
+  opacity: 0;
+  visibility: hidden;
+}
+.navigation-list {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navigation-item {
+  margin: 0.5rem 0;
+}
+.navigation-spacer {
+  margin: 2.5rem 0;
+}
+.navigation-toggle--hide,
+.navigation-toggle--show {
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+.navigation-toggle--hide {
+}
+
+.navigation--show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+====================
 sub-navigation
 ====================
 */
@@ -432,13 +487,14 @@ button
   cursor: pointer;
   width: 100%;
   padding: 1em 0;
-  background-color: hsla(188, 70%, 80%, 1);
+  /* background-color: hsla(188, 70%, 80%, 1); */
+  background-color: hsla(215, 80%, 70%, 1);
   display: flex;
   justify-content: center;
 }
 
 .button:hover {
-  background-color: hsla(188, 70%, 70%, 1);
+  background-color: hsla(215, 80%, 75%, 1);
 }
 
 .button--form {
@@ -505,10 +561,40 @@ form
 
 /*
 ====================
+intro scroll icon
+====================
+*/
+
+.intro-scroll {}
+
+.icon {}
+
+.scroll-icon {}
+
+/* bounce effect */
+.bounce {
+  position: fixed;
+  bottom: 2rem;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-webkit-keyframes bounce {
+    0%, 66%, 100% {-webkit-transform: translateY(0);}
+    33% {-webkit-transform: translateY(-0.5rem);}
+}
+@keyframes bounce {
+  0%, 66%, 100% {-webkit-transform: translateY(0);}
+  33% {-webkit-transform: translateY(-0.5rem);}
+}
+
+/*
+====================
 transitions
 ====================
 */
 
+.navigation,
 .button,
 .image,
 .image__overlay {

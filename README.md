@@ -80,13 +80,20 @@ Created with Flatiron School's online HTML & CSS class.
 * Implement new jQuery image grid more/less toggle.
 * Add new icon in main navigation.
 
+23-29 NOV 2016
+* Rewrite all HTML/CSS to be a bit cleaner.
+* Wish I knew more Javascript and/or used a preprocessor like YAML.
+* Add all country images.
+* Add about section.
+
 ---
 
 #### To Do
 
-* Add remaining country images (Germany, onward) with retina capability.
-* Add "[icon?] View On Instagram" to image overlay.
-* Create About page.
+* Add final text content.
+* Complete country prev/next navigation.
+* Finalize color scheme and other styles.
+* Clean up main navigation and icon markup and styles.
 * Correct and complete contact form.
 * Contact form validation and focus styles.
 * Complete responsive CSS.
@@ -96,6 +103,5 @@ Created with Flatiron School's online HTML & CSS class.
 
 * Grid images need placeholder (div is collapsed before image load – should be 288x288), preferably code with background color.
 * Fix `<span>*Required</span>` vertical alignment in contact form.
-* Contact form input rounded border in mobile.
 
 #### Future Goals

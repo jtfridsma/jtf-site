@@ -16,6 +16,57 @@
   </head>
   <body>
 
+    <nav class="navigation" id="navigation" role="navigation">
+      <div class="navigation-toggle navigation-toggle--hide">
+        <a>
+          <svg height="24" width="24" viewBox="0 0 32 32">
+            <rect id="line--1" fill="hsla(17, 88%, 73%, 1)" x="0" y="13" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="32" height="6"/>
+            <rect id="line--2" fill="hsla(17, 88%, 73%, 1)" x="13" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6274 16)" width="6" height="32"/>
+          </svg>
+        </a>
+      </div>
+      <div class="navigation-list">
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#europe">Europe</a>
+          </div>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#asia">Asia</a>
+          </div>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#oceania">Oceania</a>
+          </div>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#north-america">North America</a>
+          </div>
+          <div class="navigation-spacer">
+            <svg height="32" width="32" viewBox="0 0 32 32">
+              <path id="base" fill="hsla(17, 88%, 73%, 1)" d="M30.6,20H1.4C1.2,20,1,20.2,1,20.4L0,29h32l-1-8.6C31,20.2,30.8,20,30.6,20z"/>
+              <path id="head" fill="hsla(17, 88%, 73%, 1)" d="M27,3.5C27,3.2,26.8,3,26.5,3c-6.9,1.3-14,1.3-21,0C5.2,3,5,3.2,5,3.5L4,19h24L27,3.5z M16,15c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C20,13.2,18.2,15,16,15z"/>
+              <circle id="dot" fill="hsla(17, 88%, 73%, 1)" cx="16" cy="11" r="1"/>
+            </svg>
+          </div>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#home">Home</a>
+          </div>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#about">About</a>
+          </div>
+          <div class="navigation-item">
+            <a class="link link--navigation link--strikethrough navigation-toggle" href="#contact">Contact</a>
+          </div>
+      </div>
+    </nav><!-- .navigation -->
+
+    <div class="navigation-toggle navigation-toggle--show">
+      <a>
+        <svg height="24" width="24" viewBox="0 0 32 32">
+          <rect id="line--top" fill="hsla(17, 88%, 73%, 1)" y="1" width="32" height="6"/>
+          <rect id="line--middle" fill="hsla(17, 88%, 73%, 1)" y="13" width="32" height="6"/>
+          <rect id="line--bottom" fill="hsla(17, 88%, 73%, 1)" y="25" width="32" height="6"/>
+        </svg>
+      </a>
+    </div>
+
     <div class="section section--background-image home" id="home">
       <div class="wrapper">
 
@@ -31,12 +82,25 @@
             </div>
           </div><!-- /.home__container -->
         </div>
+      </div><!-- /.wrapper -->
 
-        <div>
+      <div class="section intro-scroll">
+        <div class="wrapper">
 
-        </div>
+          <span class="icon scroll-icon bounce">
+            <a href="#intro">
+              <svg height="32" width="32" viewBox="0 0 32 32">
+                <polygon id="arrow" fill="hsla(17, 88%, 73%, 1)" points="16,25.2 2.6,11.8 6.8,7.6 16,16.8 25.2,7.6 29.4,11.8 "/>
+              </svg>
+            </a>
+          </span>
 
-        <div class="section section--padding intro" id="intro">
+        </div><!-- /.wrapper -->
+      </div>
+
+      <div class="section section--padding intro" id="intro">
+        <div class="wrapper">
+
           <div class="intro__container clearfix teaser lazyload" data-expand="-100">
             <div class="column column--2-3 column--right column--last">
               <p class="text text--large text--white">
@@ -53,9 +117,9 @@
               </p>
             </div>
           </div><!-- /.intro__container -->
-        </div><!-- /#intro -->
+        </div><!-- /.wrapper -->
+      </div><!-- /#intro -->
 
-      </div><!-- /.wrapper -->
     </div><!-- /#home -->
 
     <div class="section section--padding main">
