@@ -80,7 +80,7 @@ Created with Flatiron School's online HTML & CSS class.
 * Implement new jQuery image grid more/less toggle.
 * Add new icon in main navigation.
 
-23-29 NOV 2016
+23-30 NOV 2016
 * Rewrite all HTML/CSS to be a bit cleaner.
 * Wish I knew more Javascript and/or used a preprocessor like YAML.
 * Add all country images.

@@ -87,7 +87,13 @@ layout
   justify-content: center;
 }
 
-.section--flex-center {}
+.section--flex-center {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* wrapper */
 .wrapper {
@@ -154,7 +160,7 @@ z-index
   z-index: 20;
 }
 
-.navigation-toggle--show {
+.navigation__toggle--show {
   z-index: 30;
 }
 
@@ -255,21 +261,21 @@ continent, country
 
 /*
 ====================
-image grid
+image, image grid
 ====================
 */
 
-.image-grid {}
-
-.image-grid__row {
-  margin-bottom: 2%;
-}
-
-/* image */
 .image {}
 
 .image--circle {
   border-radius: 50%;
+}
+
+/* image grid */
+.image__grid {}
+
+.image__row {
+  margin-bottom: 2%;
 }
 
 .image__container {
@@ -291,46 +297,43 @@ image grid
   visibility: hidden;
 }
 
-/* image hover image */
-.image__container:hover > .image__link > .image__overlay {
+/* image hover */
+.image__link:hover > .image__overlay {
   opacity: 1;
   visibility: visible;
 }
 
-.image__container:hover > .image__link > .image {
+.image__link:hover > .image {
   transform: scale(1.0125);
 }
 
-/* toggle */
-.image-grid__toggle {}
-
-.image-grid__toggle--hide {
+/* image toggle */
+.image__toggle {
   display: none;
 }
 
-.image-grid__toggle--show {
+.image__toggle--show {
   display: block;
 }
 
-/* image grid countries */
-.image-grid--iceland {}
-.image-grid--netherlands {}
-.image-grid--belgium {}
-.image-grid--germany {}
-.image-grid--denmark {}
-.image-grid--sweden {}
-.image-grid--finland {}
-.image-grid--norway {}
-.image-grid--thailand {}
-.image-grid--cambodia {}
-.image-grid--vietnam {}
-.image-grid--singapore {}
-.image-grid--indonesia {}
-.image-grid--australia {}
-.image-grid--hawaii {}
-.image-grid--canada {}
-.image-grid--usa {}
-.image-grid--puerto-rico {}
+.image__toggle--iceland {}
+.image__toggle--netherlands {}
+.image__toggle--belgium {}
+.image__toggle--germany {}
+.image__toggle--denmark {}
+.image__toggle--sweden {}
+.image__toggle--finland {}
+.image__toggle--norway {}
+.image__toggle--thailand {}
+.image__toggle--cambodia {}
+.image__toggle--vietnam {}
+.image__toggle--singapore {}
+.image__toggle--indonesia {}
+.image__toggle--australia {}
+.image__toggle--hawaii {}
+.image__toggle--canada {}
+.image__toggle--usa {}
+.image__toggle--puerto-rico {}
 
 /*
 ====================
@@ -340,30 +343,26 @@ header
 
 .header {
   font-weight: 500;
-  /* color: hsla(19, 88%, 75%, 1); */
-  color: hsla(330, 100%, 80%, 1);
+  line-height: 1.375em;
+  color: hsla(20, 88%, 72%, 1);
   margin-bottom: 2rem;
 }
 
 .header--home {
   font-family: 'Archivo Black';
-  font-size: 6rem;
+  font-size: 9rem;
   text-transform: uppercase;
+  line-height: 0.875em;
 }
 
 .header--continent {
   font-size: 3rem;
+  border-bottom: 5px solid hsla(20, 88%, 72%, 1);
 }
 
 .header--country {
   font-size: 1.5rem;
-  /* border-bottom: 3px solid hsla(19, 88%, 75%, 1); */
-  border-bottom: 3px solid hsla(330, 100%, 80%, 1);
-}
-
-.header--underline {
-  /* border-bottom: 5px solid hsla(19, 88%, 75%, 1); */
-  border-bottom: 5px solid hsla(330, 100%, 80%, 1);
+  border-bottom: 3px solid hsla(20, 88%, 72%, 1);
 }
 
 /*
@@ -373,7 +372,7 @@ text
 */
 
 .text {
-  line-height: 1.5em;
+  line-height: 1.625em;
 }
 
 .text--small {
@@ -382,10 +381,6 @@ text
 
 .text--large {
   font-size: 1.125rem;
-}
-
-.text--right {
-  text-align: right;
 }
 
 .text--center {
@@ -436,27 +431,27 @@ navigation
   opacity: 0;
   visibility: hidden;
 }
-.navigation-list {
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.navigation__list {
 }
-.navigation-item {
+
+.navigation__item {
   margin: 0.5rem 0;
 }
-.navigation-spacer {
+
+.navigation__spacer {
   margin: 2.5rem 0;
 }
-.navigation-toggle--hide,
-.navigation-toggle--show {
+
+.navigation__toggle--hide,
+.navigation__toggle--show {
   cursor: pointer;
   position: fixed;
   top: 2rem;
   right: 2rem;
 }
-.navigation-toggle--hide {
+
+.navigation__toggle--hide {
 }
 
 .navigation--show {
@@ -470,12 +465,33 @@ sub-navigation
 ====================
 */
 
-.sub-navigation {}
+.sub-navigation__list {}
 
 .sub-navigation__item {}
 
-.sub-navigation__item--alternate {}
+/*
+====================
+link
+====================
+*/
 
+.link {
+  line-height: 1.625em;
+}
+
+.link--large {
+  font-size: 1.125rem;
+}
+
+/*
+====================
+icon
+====================
+*/
+
+.icon {
+  fill: hsla(20, 88%, 72%, 1);
+}
 
 /*
 ====================
@@ -575,17 +591,17 @@ intro scroll icon
 .bounce {
   position: fixed;
   bottom: 2rem;
-  -moz-animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s infinite;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 @-webkit-keyframes bounce {
-    0%, 66%, 100% {-webkit-transform: translateY(0);}
-    33% {-webkit-transform: translateY(-0.5rem);}
+    0%, 100% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(-0.5rem);}
 }
 @keyframes bounce {
-  0%, 66%, 100% {-webkit-transform: translateY(0);}
-  33% {-webkit-transform: translateY(-0.5rem);}
+  0%, 100% {-webkit-transform: translateY(0);}
+  50% {-webkit-transform: translateY(-0.5rem);}
 }
 
 /*

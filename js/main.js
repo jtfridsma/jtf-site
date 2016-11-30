@@ -18,7 +18,7 @@ $(function() {
 // navigation toggle
 
 $(function() {
-  $('.navigation-toggle').on('click', function() {
+  $('.navigation__toggle').on('click', function() {
     $('.navigation').toggleClass('navigation--show');
   });
 });
@@ -35,91 +35,91 @@ $(function() {
 
 $(function() {
   $('.button--iceland').on('click', function() {
-    $('.image-grid--iceland').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--iceland').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--netherlands').on('click', function() {
-    $('.image-grid--netherlands').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--netherlands').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--belgium').on('click', function() {
-    $('.image-grid--belgium').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--belgium').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--germany').on('click', function() {
-    $('.image-grid--germany').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--germany').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--denmark').on('click', function() {
-    $('.image-grid--denmark').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--denmark').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--sweden').on('click', function() {
-    $('.image-grid--sweden').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--sweden').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--finland').on('click', function() {
-    $('.image-grid--finland').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--finland').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--norway').on('click', function() {
-    $('.image-grid--norway').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--norway').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--thailand').on('click', function() {
-    $('.image-grid--thailand').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--thailand').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--cambodia').on('click', function() {
-    $('.image-grid--cambodia').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--cambodia').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--vietnam').on('click', function() {
-    $('.image-grid--vietnam').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--vietnam').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--singapore').on('click', function() {
-    $('.image-grid--singapore').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--singapore').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--indonesia').on('click', function() {
-    $('.image-grid--indonesia').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--indonesia').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--australia').on('click', function() {
-    $('.image-grid--australia').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--australia').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--hawaii').on('click', function() {
-    $('.image-grid--hawaii').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--hawaii').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--canada').on('click', function() {
-    $('.image-grid--canada').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--canada').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--usa').on('click', function() {
-    $('.image-grid--usa').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--usa').toggleClass('image__toggle--show');
   });
 });
 $(function() {
   $('.button--puerto-rico').on('click', function() {
-    $('.image-grid--puerto-rico').toggleClass('image-grid__toggle--show');
+    $('.image__toggle--puerto-rico').toggleClass('image__toggle--show');
   });
 });
